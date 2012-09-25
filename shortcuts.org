@@ -1,0 +1,22 @@
+#+TITLE: \color{statblue}{Emacs Shortcuts}
+#+AUTHOR: \color{statblue}Ronert Obst
+#+DATE: \color{statblue}\today
+#+LATEX_CMD: xelatex
+#+LaTeX_CLASS: xelatexcalibri
+
+* Text
+| Action | Shortcut |
+|--------+----------|
+|        |          |
+* Programming
+| Action | Shortcut |
+|--------+----------|
+|        |          |
+* ESS
+| Action | Shortcut |
+|--------+----------|
+|        |          |
+* Python
+| Action | Shortcut |
+|--------+----------|
+|        |          |
