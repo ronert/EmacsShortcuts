@@ -3,15 +3,43 @@
 #+DATE: \color{statblue}\today
 #+LATEX_CMD: xelatex
 #+LaTeX_CLASS: xelatexcalibri
-
+* General
+| Action                   | Shortcut |
+|--------------------------+----------|
+| help-command             | <f1>     |
+| apropos                  | <f1>-a   |
+| find-name-dired          | C-c s    |
+| dired-jump               | C-x C-j  |
+| cycle through buffers    | C-<tab>  |
+| create new frame         | C-x C-n  |
+| rotate-windows           | C-x -    |
+| find recent file         | C-x f    |
+| browse-kill-ring         | C-x y    |
+| linum-mode               | C-<f6>   |
+| multi-occur-in-this-mode | C-c r    |
+* Packages
+| Action     | Shortcut |
+|------------+----------|
+| eshell     | C-x m    |
+| new eshell | C-x M    |
 * Text
-| Action | Shortcut |
-|--------+----------|
-|        |          |
+| Action                   | Shortcut |
+|--------------------------+----------|
+| query-replace-regexp     | M-&      |
+| hippie-expand            | C-.      |
+| mark-whole-buffer        | C-c m    |
+| duplicate-line           | C-c n    |
+
+
+
+
 * Programming
-| Action | Shortcut |
-|--------+----------|
-|        |          |
+| Action                      | Shortcut |
+|-----------------------------+----------|
+| align-regexp                | C-x //   |
+| prelude-cleanup-buffer      | M-ß      |
+| comment-or-uncomment-region | C-c c    |
+| uncomment-region            | C-c u    |
 * ESS
 | Action | Shortcut |
 |--------+----------|
