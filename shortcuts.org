@@ -49,10 +49,9 @@
 | prelude-ido-goto-symbol      | C-c i     |
 | rgrep                        | C-x C-r   |
 | mark-defun                   | C-M-h     |
-| mark-all-like-this           | M-ä       |
-| mark-previous-like-this      | C-ö       |
-| mark-next-like-this          | C-ä       |
-| mark-more-like-this-extended | C-ü       |
+| mc/mark-all-like-this        | C-ä      |
+| mc/mark-previous-like-this   | C-ü       |
+| mc/mark-next-like-this       | C-ö       |
 | expand-region                | C-- or -- |
 * ESS
 | Action | Shortcut |
