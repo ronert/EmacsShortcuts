@@ -4,34 +4,33 @@
 #+LATEX_CMD: xelatex
 #+LaTeX_CLASS: xelatexcalibri
 * General
-| Action                   | Shortcut |
-|--------------------------+----------|
-| help-command             | <f1>     |
-| apropos                  | <f1>-a   |
-| find-name-dired          | C-c s    |
-| dired-jump               | C-x C-j  |
-| cycle through buffers    | C-<tab>  |
-| create new frame         | C-x C-n  |
-| rotate-windows           | C-x -    |
-| find recent file         | C-x f    |
-| browse-kill-ring         | C-x y    |
-| linum-mode               | C-<f6>   |
-| multi-occur-in-this-mode | C-c r    |
+| Action                 | Shortcut |
+|------------------------+----------|
+| help-command           | <f1>     |
+| apropos                | <f1>-a   |
+| find-name-dired        | C-c s    |
+| dired-jump             | C-x C-j  |
+| cycle through buffers  | C-<tab>  |
+| create new frame       | C-x C-n  |
+| rotate-windows         | C-x -    |
+| find recent file       | C-x f    |
+| find-file-other-window | C-x M-f  |
+| browse-kill-ring       | C-x y    |
+| ibuffer                | C-x C-b  | 
 * Packages
 | Action     | Shortcut |
 |------------+----------|
 | eshell     | C-x m    |
 | new eshell | C-x M    |
 * Text
-| Action                   | Shortcut |
-|--------------------------+----------|
-| query-replace-regexp     | M-&      |
-| hippie-expand            | C-.      |
-| mark-whole-buffer        | C-c m    |
-| duplicate-line           | C-c n    |
-
-
-
+| Action               | Shortcut |
+|----------------------+----------|
+| query-replace-regexp | M-&      |
+| hippie-expand        | C-.      |
+| mark-whole-buffer    | C-c m    |
+| duplicate-line       | C-c n    |
+| writegood-mode       | C-c w    |
+| cleanup-buffer       | C-c ß    |
 
 * Programming
 | Action                      | Shortcut |
@@ -40,6 +39,11 @@
 | prelude-cleanup-buffer      | M-ß      |
 | comment-or-uncomment-region | C-c c    |
 | uncomment-region            | C-c u    |
+| mark-defun                  | C-M-h    |
+| linum-mode                  | C-<f6>   |
+| multi-occur-in-this-mode    | C-c r    |
+| prelude-ido-goto-symbol     | C-c i    |
+| rgrep                       | C-x C-r  |
 * ESS
 | Action | Shortcut |
 |--------+----------|
@@ -48,3 +52,20 @@
 | Action | Shortcut |
 |--------+----------|
 |        |          |
+* LaTeX
+| Action                   | Shortcut |
+|--------------------------+----------|
+| LaTeX-math-abbrev-prefix | C-c m    |
+| TeX-teify                | C-c C-a  |
+* Org
+| Action               | Shortcut |
+|----------------------+----------|
+| org-cdlatex-mode     | C-c ö    |
+| org-edit-src-code    | C-c ü    |
+| org-edit-src-exit    | C-c ä    |
+| org-mac-link-grabber | C-c g    |
+* VC
+| Action       | Shortcut |
+|--------------+----------|
+| magit-status | C-x g    |
+
