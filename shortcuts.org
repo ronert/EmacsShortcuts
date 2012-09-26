@@ -23,27 +23,37 @@
 | eshell     | C-x m    |
 | new eshell | C-x M    |
 * Text
-| Action               | Shortcut |
-|----------------------+----------|
-| query-replace-regexp | M-&      |
-| hippie-expand        | C-.      |
-| mark-whole-buffer    | C-c m    |
-| duplicate-line       | C-c n    |
-| writegood-mode       | C-c w    |
-| cleanup-buffer       | C-c ß    |
-
+| Action                   | Shortcut                  |
+|--------------------------+---------------------------|
+| query-replace-regexp     | M-&                       |
+| hippie-expand            | C-. or ..                 |
+| mark-whole-buffer        | C-c m                     |
+| duplicate-line           | C-c n                     |
+| writegood-mode           | C-c w                     |
+| cleanup-buffer           | C-c ß                     |
+| ace-jump-mode            | C-c j or s-<return> or jj |
+| jump-char-forward        | M-ü                       |
+| jump-char-backward       | M-ö                       |
+| iy-go-to-char            | M-m or ff                 |
+| defining-kbd-macro       | <f3>                      |
+| kmacro-end-or-call-macro | <f4>                      |
 * Programming
-| Action                      | Shortcut |
-|-----------------------------+----------|
-| align-regexp                | C-x //   |
-| prelude-cleanup-buffer      | M-ß      |
-| comment-or-uncomment-region | C-c c    |
-| uncomment-region            | C-c u    |
-| mark-defun                  | C-M-h    |
-| linum-mode                  | C-<f6>   |
-| multi-occur-in-this-mode    | C-c r    |
-| prelude-ido-goto-symbol     | C-c i    |
-| rgrep                       | C-x C-r  |
+| Action                       | Shortcut  |
+|------------------------------+-----------|
+| align-regexp                 | C-x //    |
+| prelude-cleanup-buffer       | M-ß       |
+| comment-or-uncomment-region  | C-c c     |
+| uncomment-region             | C-c u     |
+| linum-mode                   | C-<f6>    |
+| multi-occur-in-this-mode     | C-c r     |
+| prelude-ido-goto-symbol      | C-c i     |
+| rgrep                        | C-x C-r   |
+| mark-defun                   | C-M-h     |
+| mark-all-like-this           | M-ä       |
+| mark-previous-like-this      | C-ö       |
+| mark-next-like-this          | C-ä       |
+| mark-more-like-this-extended | C-ü       |
+| expand-region                | C-- or -- |
 * ESS
 | Action | Shortcut |
 |--------+----------|
@@ -64,7 +74,7 @@
 | org-edit-src-code    | C-c ü    |
 | org-edit-src-exit    | C-c ä    |
 | org-mac-link-grabber | C-c g    |
-* VC
+* VC                
 | Action       | Shortcut |
 |--------------+----------|
 | magit-status | C-x g    |
