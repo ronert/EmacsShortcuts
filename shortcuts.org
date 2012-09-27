@@ -32,27 +32,28 @@
 | writegood-mode           | C-c w                     |
 | cleanup-buffer           | C-c ß                     |
 | ace-jump-mode            | C-c j or s-<return> or jj |
-| jump-char-forward        | M-ü                       |
-| jump-char-backward       | M-ö                       |
+| jump-char-forward        | M-ö                       |
+| jump-char-backward       | M-ü                       |
 | iy-go-to-char            | M-m or ff                 |
 | defining-kbd-macro       | <f3>                      |
 | kmacro-end-or-call-macro | <f4>                      |
 * Programming
-| Action                       | Shortcut  |
-|------------------------------+-----------|
-| align-regexp                 | C-x //    |
-| prelude-cleanup-buffer       | M-ß       |
-| comment-or-uncomment-region  | C-c c     |
-| uncomment-region             | C-c u     |
-| linum-mode                   | C-<f6>    |
-| multi-occur-in-this-mode     | C-c r     |
-| prelude-ido-goto-symbol      | C-c i     |
-| rgrep                        | C-x C-r   |
-| mark-defun                   | C-M-h     |
-| mc/mark-all-like-this        | C-ä      |
-| mc/mark-previous-like-this   | C-ü       |
-| mc/mark-next-like-this       | C-ö       |
-| expand-region                | C-- or -- |
+| Action                      | Shortcut  |
+|-----------------------------+-----------|
+| align-regexp                | C-x //    |
+| prelude-cleanup-buffer      | M-ß       |
+| comment-or-uncomment-region | C-c c     |
+| uncomment-region            | C-c u     |
+| linum-mode                  | C-<f6>    |
+| multi-occur-in-this-mode    | C-c r     |
+| prelude-ido-goto-symbol     | C-c i     |
+| rgrep                       | C-x C-r   |
+| mark-defun                  | C-M-h     |
+| mc/mark-all-like-this       | C-ä       |
+| mc/mark-previous-like-this  | C-ü       |
+| mc/mark-next-like-this      | C-ö       |
+| expand-region               | C-- or -- |
+| move with expand region     | s-<arrow> |
 * ESS
 | Action | Shortcut |
 |--------+----------|
