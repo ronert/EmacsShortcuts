@@ -17,7 +17,7 @@
 | find-file-other-window     | C-x M-f  |
 | browse-kill-ring           | C-x y    |
 | ibuffer                    | C-x C-b  |
-| rename current buffer file | C-x w    |
+| rename-current-buffer-file | C-x w    |
 * Packages
 | Action     | Shortcut |
 |------------+----------|
@@ -59,6 +59,8 @@
 | mc/mark-next-like-this      | C-ö       |
 | expand-region               | C-- or -- |
 | move with expand region     | s-<arrow> |
+| move-line-down              | M-S-down  |
+| move-line-up                | M-S-up    |
 * ESS
 | Action | Shortcut |
 |--------+----------|
