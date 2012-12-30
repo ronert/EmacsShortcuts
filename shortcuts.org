@@ -2,21 +2,22 @@
 #+AUTHOR: \color{statblue}Ronert Obst
 #+DATE: \color{statblue}\today
 #+LATEX_CMD: xelatex
-#+LaTeX_CLASS: xelatexcalibri
+#+LaTeX_CLASS: rcalibri
 * General
-| Action                 | Shortcut |
-|------------------------+----------|
-| help-command           | <f1>     |
-| apropos                | <f1>-a   |
-| find-name-dired        | C-c s    |
-| dired-jump             | C-x C-j  |
-| cycle through buffers  | C-<tab>  |
-| create new frame       | C-x C-n  |
-| rotate-windows         | C-x -    |
-| find recent file       | C-x f    |
-| find-file-other-window | C-x M-f  |
-| browse-kill-ring       | C-x y    |
-| ibuffer                | C-x C-b  | 
+| Action                     | Shortcut |
+|----------------------------+----------|
+| help-command               | <f1>     |
+| apropos                    | <f1>-a   |
+| find-name-dired            | C-c s    |
+| dired-jump                 | C-x C-j  |
+| cycle through buffers      | C-<tab>  |
+| create new frame           | C-x C-n  |
+| rotate-windows             | C-x -    |
+| find recent file           | C-x f    |
+| find-file-other-window     | C-x M-f  |
+| browse-kill-ring           | C-x y    |
+| ibuffer                    | C-x C-b  |
+| rename current buffer file | C-x w    |
 * Packages
 | Action     | Shortcut |
 |------------+----------|
@@ -29,14 +30,16 @@
 | hippie-expand            | C-. or ..                 |
 | mark-whole-buffer        | C-c m                     |
 | duplicate-line           | C-c n                     |
+| kill-lines               | C-c C-<backspace>         |
 | writegood-mode           | C-c w                     |
 | cleanup-buffer           | C-c ß                     |
 | ace-jump-mode            | C-c j or s-<return> or jj |
 | jump-char-forward        | M-ö                       |
 | jump-char-backward       | M-ü                       |
-| iy-go-to-char            | M-m or ff                 |
+| iy-go-to-char            | M-m or kk                 |
 | defining-kbd-macro       | <f3>                      |
 | kmacro-end-or-call-macro | <f4>                      |
+| join-line                | C-x a                     |
 * Programming
 | Action                      | Shortcut  |
 |-----------------------------+-----------|
@@ -47,6 +50,8 @@
 | linum-mode                  | C-<f6>    |
 | multi-occur-in-this-mode    | C-c r     |
 | prelude-ido-goto-symbol     | C-c i     |
+| ack-and-a-half              | C-c 1     |
+| ack-and-a-half-find-file    | C-c 2     |
 | rgrep                       | C-x C-r   |
 | mark-defun                  | C-M-h     |
 | mc/mark-all-like-this       | C-ä       |
@@ -66,7 +71,7 @@
 | Action                   | Shortcut |
 |--------------------------+----------|
 | LaTeX-math-abbrev-prefix | C-c m    |
-| TeX-teify                | C-c C-a  |
+| TeX-texify               | C-c C-a  |
 * Org
 | Action               | Shortcut |
 |----------------------+----------|
@@ -74,8 +79,7 @@
 | org-edit-src-code    | C-c ü    |
 | org-edit-src-exit    | C-c ä    |
 | org-mac-link-grabber | C-c g    |
-* VC                
+* VC
 | Action       | Shortcut |
 |--------------+----------|
 | magit-status | C-x g    |
-
