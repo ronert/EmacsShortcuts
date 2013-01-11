@@ -3,6 +3,7 @@
 #+DATE: \color{statblue}\today
 #+LATEX_CMD: xelatex
 #+LaTeX_CLASS: rcalibri
+#+LaTeX_CLASS_OPTIONS: [english]
 * General
 | Action                     | Shortcut |
 |----------------------------+----------|
@@ -17,7 +18,10 @@
 | find-file-other-window     | C-x M-f  |
 | browse-kill-ring           | C-x y    |
 | ibuffer                    | C-x C-b  |
+| zap-to-char                | M-z      |
+| zap-up-to-char             | hh       |
 | rename-current-buffer-file | C-x w    |
+| delete-current-buffer-file | C-x C-k  |
 * Packages
 | Action     | Shortcut |
 |------------+----------|
@@ -40,6 +44,8 @@
 | defining-kbd-macro       | <f3>                      |
 | kmacro-end-or-call-macro | <f4>                      |
 | join-line                | C-x a                     |
+| open-line-below          | Alt-<return>              |
+| open-line-above          | Alt-Shift-<return>        |
 * Programming
 | Action                      | Shortcut  |
 |-----------------------------+-----------|
