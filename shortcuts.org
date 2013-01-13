@@ -18,8 +18,6 @@
 | find-file-other-window     | C-x M-f  |
 | browse-kill-ring           | C-x y    |
 | ibuffer                    | C-x C-b  |
-| zap-to-char                | M-z      |
-| zap-up-to-char             | hh       |
 | rename-current-buffer-file | C-x w    |
 | delete-current-buffer-file | C-x C-k  |
 * Packages
@@ -28,24 +26,27 @@
 | eshell     | C-x m    |
 | new eshell | C-x M    |
 * Text
-| Action                   | Shortcut           |
-|--------------------------+--------------------|
-| query-replace-regexp     | M-&                |
-| hippie-expand            | C-. or ..          |
-| mark-whole-buffer        | C-c m              |
-| duplicate-line           | C-c n              |
-| kill-lines               | C-c C-<backspace>  |
-| writegood-mode           | C-c w              |
-| cleanup-buffer           | C-c ß              |
-| ace-jump-mode            | jj                 |
-| jump-char-forward        | kk                 |
-| jump-char-backward       | dd                 |
-| iy-go-to-char            | öö                 |
-| defining-kbd-macro       | <f3>               |
-| kmacro-end-or-call-macro | <f4>               |
-| join-line                | C-x a              |
-| open-line-below          | Alt-<return>       |
-| open-line-above          | Alt-Shift-<return> |
+| Action                   | Shortcut          |
+|--------------------------+-------------------|
+| query-replace-regexp     | M-&               |
+| hippie-expand            | C-. or ..         |
+| mark-whole-buffer        | C-c m             |
+| duplicate-line           | C-c n             |
+| kill-lines               | C-c C-<backspace> |
+| writegood-mode           | C-c w             |
+| cleanup-buffer           | C-c ß             |
+| ace-jump-line-mode       | jj                |
+| ace-jump-word-mode       | hh                |
+| jump-char-forward        | kk                |
+| jump-char-backward       | dd                |
+| iy-go-to-char            | öö                |
+| zap-to-char              | üü                |
+| zap-up-to-char           | ää                |
+| defining-kbd-macro       | <f3>              |
+| kmacro-end-or-call-macro | <f4>              |
+| join-line                | C-x a             |
+| open-line-below          | ii                |
+| open-line-above          | uu                |
 * Programming
 | Action                      | Shortcut  |
 |-----------------------------+-----------|
