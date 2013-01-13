@@ -28,24 +28,24 @@
 | eshell     | C-x m    |
 | new eshell | C-x M    |
 * Text
-| Action                   | Shortcut                  |
-|--------------------------+---------------------------|
-| query-replace-regexp     | M-&                       |
-| hippie-expand            | C-. or ..                 |
-| mark-whole-buffer        | C-c m                     |
-| duplicate-line           | C-c n                     |
-| kill-lines               | C-c C-<backspace>         |
-| writegood-mode           | C-c w                     |
-| cleanup-buffer           | C-c ß                     |
-| ace-jump-mode            | C-c j or s-<return> or jj |
-| jump-char-forward        | M-ö                       |
-| jump-char-backward       | M-ü                       |
-| iy-go-to-char            | M-m or kk                 |
-| defining-kbd-macro       | <f3>                      |
-| kmacro-end-or-call-macro | <f4>                      |
-| join-line                | C-x a                     |
-| open-line-below          | Alt-<return>              |
-| open-line-above          | Alt-Shift-<return>        |
+| Action                   | Shortcut           |
+|--------------------------+--------------------|
+| query-replace-regexp     | M-&                |
+| hippie-expand            | C-. or ..          |
+| mark-whole-buffer        | C-c m              |
+| duplicate-line           | C-c n              |
+| kill-lines               | C-c C-<backspace>  |
+| writegood-mode           | C-c w              |
+| cleanup-buffer           | C-c ß              |
+| ace-jump-mode            | jj                 |
+| jump-char-forward        | kk                 |
+| jump-char-backward       | dd                 |
+| iy-go-to-char            | öö                 |
+| defining-kbd-macro       | <f3>               |
+| kmacro-end-or-call-macro | <f4>               |
+| join-line                | C-x a              |
+| open-line-below          | Alt-<return>       |
+| open-line-above          | Alt-Shift-<return> |
 * Programming
 | Action                      | Shortcut  |
 |-----------------------------+-----------|
@@ -87,7 +87,8 @@
 | org-edit-src-code    | C-c ü    |
 | org-edit-src-exit    | C-c ä    |
 | org-mac-link-grabber | C-c g    |
-* VC
-| Action       | Shortcut |
-|--------------+----------|
-| magit-status | C-x g    |
+* magit
+| Action                  | Shortcut |
+|-------------------------+----------|
+| magit-status            | C-x g    |
+| magit toggle whitespace | W        |
