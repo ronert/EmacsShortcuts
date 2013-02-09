@@ -5,26 +5,22 @@
 #+LaTeX_CLASS: rcalibri
 #+LaTeX_CLASS_OPTIONS: [english]
 * General
-| Action                     | Shortcut |
-|----------------------------+----------|
-| help-command               | <f1>     |
-| apropos                    | <f1>-a   |
-| find-name-dired            | C-c s    |
-| dired-jump                 | C-x C-j  |
-| cycle through buffers      | C-<tab>  |
-| create new frame           | C-x C-n  |
-| rotate-windows             | C-x -    |
-| find recent file           | C-x f    |
-| find-file-other-window     | C-x M-f  |
-| browse-kill-ring           | C-x y    |
-| ibuffer                    | C-x C-b  |
-| rename-current-buffer-file | C-x w    |
-| delete-current-buffer-file | C-x C-k  |
-* Packages
-| Action     | Shortcut |
-|------------+----------|
-| eshell     | C-x m    |
-| new eshell | C-x M    |
+| Action                      | Shortcut |
+|-----------------------------+----------|
+| help-command                | <f1>     |
+| apropos                     | <f1>-a   |
+| find-name-dired             | C-c s    |
+| dired-jump                  | C-x C-j  |
+| cycle through buffers       | C-<tab>  |
+| create new frame            | C-x C-n  |
+| rotate-windows              | C-x -    |
+| find recent file            | C-x f    |
+| find-file-other-window      | C-x M-f  |
+| browse-kill-ring            | C-x y    |
+| ibuffer                     | C-x C-b  |
+| rename-current-buffer-file  | C-x w    |
+| delete-current-buffer-file  | C-x C-k  |
+| in ido-find-file go to home | C-c h    |
 * Text
 | Action                   | Shortcut          |
 |--------------------------+-------------------|
@@ -38,7 +34,7 @@
 | ace-jump-line-mode       | jj                |
 | ace-jump-word-mode       | hh                |
 | jump-char-forward        | kk                |
-| jump-char-backward       | dd                |
+| jump-char-backward       | aa                |
 | iy-go-to-char            | öö                |
 | zap-to-char              | üü                |
 | zap-up-to-char           | ää                |
@@ -47,6 +43,7 @@
 | join-line                | C-x a             |
 | open-line-below          | ii                |
 | open-line-above          | uu                |
+| undo-tree-visualize      | C-c v             |
 * Programming
 | Action                      | Shortcut  |
 |-----------------------------+-----------|
@@ -88,8 +85,14 @@
 | org-edit-src-code    | C-c ü    |
 | org-edit-src-exit    | C-c ä    |
 | org-mac-link-grabber | C-c g    |
-* magit
+* magit and other vc
 | Action                  | Shortcut |
 |-------------------------+----------|
 | magit-status            | C-x g    |
 | magit toggle whitespace | W        |
+| toggle git-gutter       | C-c C-#  |
+* Eshell
+| Action     | Shortcut |
+|------------+----------|
+| eshell     | C-x m    |
+| new eshell | C-x M    |
