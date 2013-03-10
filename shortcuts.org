@@ -23,46 +23,43 @@
 | ibuffer                     | C-x C-b  |
 | rename-current-buffer-file  | C-x w    |
 | delete-current-buffer-file  | C-x C-k  |
-| in ido-find-file go to home | C-c h    |
-* Navigation and Text Manipulation
+| In ido-find-file go to home | C-c h    |
+* Navigation
 | Action                   | Shortcut          |
 |--------------------------+-------------------|
-| query-replace-regexp     | M-&               |
-| hippie-expand            | C-. or ..         |
-| mark-whole-buffer        | C-c m             |
-| duplicate-line           | C-c n             |
-| kill-lines               | C-c C-<backspace> |
-| writegood-mode           | C-c w             |
-| cleanup-buffer           | C-c ß             |
 | ace-jump-line-mode       | jj                |
 | ace-jump-word-mode       | hh                |
 | jump-char-forward        | kk                |
 | jump-char-backward       | aa                |
 | iy-go-to-char            | öö                |
-| zap-to-char              | üü                |
-| zap-up-to-char           | ää                |
-| defining-kbd-macro       | <f3>              |
-| kmacro-end-or-call-macro | <f4>              |
-| join-line                | C-x a             |
-| open-line-below          | ii                |
-| open-line-above          | uu                |
-| undo-tree-visualize      | C-c v             |
-* Programming
-| Action                      | Shortcut  |
-|-----------------------------+-----------|
-| align-regexp                | C-x //    |
-| prelude-cleanup-buffer      | M-ß       |
-| comment-or-uncomment-region | C-c c     |
-| uncomment-region            | C-c u     |
-| linum-mode                  | C-<f6>    |
-| mark-defun                  | C-M-h     |
-| mc/mark-all-like-this       | C-ä       |
-| mc/mark-previous-like-this  | C-ü       |
-| mc/mark-next-like-this      | C-ö       |
-| expand-region               | C-- or -- |
-| move with expand region     | s-<arrow> |
-| move-line-down              | M-S-down  |
-| move-line-up                | M-S-up    |
+* Text Manipulation
+| Action                      | Shortcut          |
+|-----------------------------+-------------------|
+| join-line                   | C-x a             |
+| open-line-below             | ii                |
+| open-line-above             | uu                |
+| undo-tree-visualize         | C-c v             |
+| zap-to-char                 | üü                |
+| zap-up-to-char              | ää                |
+| cleanup-buffer              | C-c ß             |
+| align-regexp                | C-x //            |
+| query-replace-regexp        | M-&               |
+| hippie-expand               | C-. or ..         |
+| mark-whole-buffer           | C-c m             |
+| duplicate-line              | C-c n             |
+| kill-lines                  | C-c C-<backspace> |
+| prelude-cleanup-buffer      | M-ß               |
+| comment-or-uncomment-region | C-c c             |
+| uncomment-region            | C-c u             |
+| linum-mode                  | C-<f6>            |
+| mark-defun                  | C-M-h             |
+| mc/mark-all-like-this       | C-ä               |
+| mc/mark-previous-like-this  | C-ü               |
+| mc/mark-next-like-this      | C-ö               |
+| expand-region               | C-- or --         |
+| move with expand region     | s-<arrow>         |
+| move-line-down              | M-S-down          |
+| move-line-up                | M-S-up            |
 * Projectile and Search
 | Action                   | Shortcut |
 |--------------------------+----------|
@@ -74,6 +71,11 @@
 | ack-and-a-half-find-file | C-c 2    |
 | ack-and-a-half-find-file | C-c 2    |
 | ag-                      |          |
+* Macros
+| Action                   | Shortcut          |
+|--------------------------+-------------------|
+| defining-kbd-macro       | <f3>              |
+| kmacro-end-or-call-macro | <f4>              |
 * Org
 | Action               | Shortcut |
 |----------------------+----------|
@@ -112,3 +114,7 @@
 |------------+----------|
 | eshell     | C-x m    |
 | new eshell | C-x M    |
+* Writing
+| Action                   | Shortcut          |
+|--------------------------+-------------------|
+| writegood-mode           | C-c w             |
