@@ -4,11 +4,14 @@
 #+LATEX_CMD: xelatex
 #+LaTeX_CLASS: rcalibri
 #+LaTeX_CLASS_OPTIONS: [english]
-* General
+* Help
 | Action                      | Shortcut |
 |-----------------------------+----------|
 | help-command                | <f1>     |
 | apropos                     | <f1>-a   |
+* Buffers, Windows, Frames and Files
+| Action                      | Shortcut |
+|-----------------------------+----------|
 | find-name-dired             | C-c s    |
 | dired-jump                  | C-x C-j  |
 | cycle through buffers       | C-<tab>  |
@@ -21,7 +24,7 @@
 | rename-current-buffer-file  | C-x w    |
 | delete-current-buffer-file  | C-x C-k  |
 | in ido-find-file go to home | C-c h    |
-* Text
+* Navigation and Text Manipulation
 | Action                   | Shortcut          |
 |--------------------------+-------------------|
 | query-replace-regexp     | M-&               |
@@ -52,11 +55,6 @@
 | comment-or-uncomment-region | C-c c     |
 | uncomment-region            | C-c u     |
 | linum-mode                  | C-<f6>    |
-| multi-occur-in-this-mode    | C-c r     |
-| prelude-ido-goto-symbol     | C-c i     |
-| ack-and-a-half              | C-c 1     |
-| ack-and-a-half-find-file    | C-c 2     |
-| rgrep                       | C-x C-r   |
 | mark-defun                  | C-M-h     |
 | mc/mark-all-like-this       | C-ä       |
 | mc/mark-previous-like-this  | C-ü       |
@@ -65,11 +63,25 @@
 | move with expand region     | s-<arrow> |
 | move-line-down              | M-S-down  |
 | move-line-up                | M-S-up    |
+* Projectile and Search
+| Action                   | Shortcut |
+|--------------------------+----------|
+| multi-occur-in-this-mode | C-c r    |
+| rgrep                    | C-x C-r  |
+| prelude-ido-goto-symbol  | C-c i    |
+| ack-and-a-half           | C-c 1    |
+| ack-and-a-half-find-file | C-c 2    |
+| ack-and-a-half-find-file | C-c 2    |
+| ack-and-a-half-find-file | C-c 2    |
+| ag-                      |          |
+* Org
+| Action               | Shortcut |
+|----------------------+----------|
+| org-cdlatex-mode     | C-c ö    |
+| org-edit-src-code    | C-c ü    |
+| org-edit-src-exit    | C-c ä    |
+| org-mac-link-grabber | C-c g    |
 * ESS
-| Action | Shortcut |
-|--------+----------|
-|        |          |
-* Python
 | Action | Shortcut |
 |--------+----------|
 |        |          |
@@ -78,14 +90,18 @@
 |--------------------------+----------|
 | LaTeX-math-abbrev-prefix | C-c m    |
 | TeX-texify               | C-c C-a  |
-* Org
-| Action               | Shortcut |
-|----------------------+----------|
-| org-cdlatex-mode     | C-c ö    |
-| org-edit-src-code    | C-c ü    |
-| org-edit-src-exit    | C-c ä    |
-| org-mac-link-grabber | C-c g    |
-* magit and other vc
+* Reftex
+| Action    | Shortcut |
+|-----------+----------|
+| citation  | C-c (    |
+| reference | C-c )    |
+| label     | C-c l    |
+* Python
+| Action | Shortcut |
+|--------+----------|
+|        |          |
+* Haskell
+* magit and vc
 | Action                  | Shortcut |
 |-------------------------+----------|
 | magit-status            | C-x g    |
