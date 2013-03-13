@@ -27,19 +27,25 @@
 |-----------------------------+----------|
 | create new frame            | C-x C-n  |
 * Navigation
-| Action             | Shortcut |
-|--------------------+----------|
-| ace-jump-line-mode | jj       |
-| ace-jump-word-mode | hh       |
-| jump-char-forward  | kk       |
-| jump-char-backward | aa       |
-| iy-go-to-char      | öö       |
-| beginning-of-defun | C-M-a    |
-| end-of-defun       | C-M-e    |
+| Action                          | Shortcut  |
+|---------------------------------+-----------|
+| ace-jump-line-mode              | jj        |
+| ace-jump-word-mode              | hh        |
+| jump-char-forward               | kk        |
+| jump-char-backward              | aa        |
+| iy-go-to-char                   | öö        |
+| beginning-of-defun              | C-M-a     |
+| end-of-defun                    | C-M-e     |
+|---------------------------------+-----------|
+| ergoemacs-forward-block         | S-<down>  |
+| ergoemacs-backward-block        | S-<up>    |
+| ergoemacs-backward-open-bracket | S-<left>  |
+| ergoemacs-forward-close-bracket | S-<right> |
 * Text Manipulation
 | Action                      | Shortcut          |
 |-----------------------------+-------------------|
 | hippie-expand               | C-. or ..         |
+| auto-complete               | C-, or ,,         |
 | browse-kill-ring            | C-x y             |
 | undo-tree-visualize         | C-c v             |
 | query-replace-regexp        | M-&               |
