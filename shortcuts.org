@@ -27,13 +27,15 @@
 |-----------------------------+----------|
 | create new frame            | C-x C-n  |
 * Navigation
-| Action                   | Shortcut          |
-|--------------------------+-------------------|
-| ace-jump-line-mode       | jj                |
-| ace-jump-word-mode       | hh                |
-| jump-char-forward        | kk                |
-| jump-char-backward       | aa                |
-| iy-go-to-char            | öö                |
+| Action             | Shortcut |
+|--------------------+----------|
+| ace-jump-line-mode | jj       |
+| ace-jump-word-mode | hh       |
+| jump-char-forward  | kk       |
+| jump-char-backward | aa       |
+| iy-go-to-char      | öö       |
+| beginning-of-defun | C-M-a    |
+| end-of-defun       | C-M-e    |
 * Text Manipulation
 | Action                      | Shortcut          |
 |-----------------------------+-------------------|
@@ -115,12 +117,14 @@
 |--------+----------|
 |        |          |
 * Haskell
-* magit and vc
+* Version Control
 | Action                  | Shortcut |
 |-------------------------+----------|
 | magit-status            | C-x g    |
 | magit toggle whitespace | W        |
-| toggle git-gutter       | C-c C-#  |
+| toggle git-gutter       | F13      |
+| popup-diff git-gutter   | F14      |
+| vc-annotate             | C-x v g  |
 * Eshell
 | Action     | Shortcut |
 |------------+----------|
