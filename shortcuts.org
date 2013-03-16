@@ -5,12 +5,12 @@
 #+LaTeX_CLASS: rcalibri
 #+LaTeX_CLASS_OPTIONS: [english]
 * Help
-| Action                      | Shortcut |
+| *Action*                      | *Shortcut* |
 |-----------------------------+----------|
 | help-command                | <f1>     |
 | apropos                     | <f1>-a   |
 * Buffers, Windows, Frames and Files
-| Action                      | Shortcut |
+| *Action*                      | *Shortcut* |
 |-----------------------------+----------|
 | find-name-dired             | C-c s    |
 | dired-jump                  | C-x C-j  |
@@ -19,7 +19,6 @@
 | delete-current-buffer-file  | C-x C-k  |
 | In ido-find-file go to home | C-c h    |
 |-----------------------------+----------|
-| cycle through buffers       | C-<tab>  |
 | ibuffer                     | C-x C-b  |
 |-----------------------------+----------|
 | rotate-windows              | C-x -    |
@@ -27,7 +26,7 @@
 |-----------------------------+----------|
 | create new frame            | C-x C-n  |
 * Navigation
-| Action                          | Shortcut  |
+| *Action*                          | *Shortcut*  |
 |---------------------------------+-----------|
 | ace-jump-line-mode              | jj        |
 | ace-jump-word-mode              | hh        |
@@ -42,10 +41,11 @@
 | ergoemacs-backward-open-bracket | S-<left>  |
 | ergoemacs-forward-close-bracket | S-<right> |
 * Text Manipulation
-| Action                      | Shortcut          |
+| *Action*                    | *Shortcut*        |
 |-----------------------------+-------------------|
 | hippie-expand               | C-. or ..         |
 | auto-complete               | C-, or ,,         |
+| yas-expand                  | C-<tab>           |
 | browse-kill-ring            | C-x y             |
 | undo-tree-visualize         | C-c v             |
 | query-replace-regexp        | M-&               |
@@ -73,10 +73,10 @@
 | mc/mark-all-like-this       | C-ä               |
 | mc/mark-previous-like-this  | C-ü               |
 | mc/mark-next-like-this      | C-ö               |
-| expand-region               | C-- or --         |
+| expand-region               | C - - or - -      |
 | move with expand region     | s-<arrow>         |
 * Projectile and Search
-| Action                        | Shortcut |
+| *Action*                        | *Shortcut* |
 |-------------------------------+----------|
 | multi-occur-in-this-mode      | C-c r    |
 | rgrep                         | C-x C-r  |
@@ -92,39 +92,39 @@
 | ag-project-at-point           | C-c 7    |
 | ag-regexp-project-at-point    | C-c 8    |
 * Macros
-| Action                   | Shortcut          |
+| *Action*                   | *Shortcut*          |
 |--------------------------+-------------------|
 | defining-kbd-macro       | <f3>              |
 | kmacro-end-or-call-macro | <f4>              |
 * Org
-| Action               | Shortcut |
+| *Action*               | *Shortcut* |
 |----------------------+----------|
 | org-cdlatex-mode     | C-c ö    |
 | org-edit-src-code    | C-c ü    |
 | org-edit-src-exit    | C-c ä    |
 | org-mac-link-grabber | C-c g    |
 * ESS
-| Action | Shortcut |
+| *Action* | *Shortcut* |
 |--------+----------|
 |        |          |
 * LaTeX
-| Action                   | Shortcut |
+| *Action*                   | *Shortcut* |
 |--------------------------+----------|
 | LaTeX-math-abbrev-prefix | C-c m    |
 | TeX-texify               | C-c C-a  |
 * Reftex
-| Action    | Shortcut |
+| *Action*    | *Shortcut* |
 |-----------+----------|
 | citation  | C-c (    |
 | reference | C-c )    |
 | label     | C-c l    |
 * Python
-| Action | Shortcut |
+| *Action* | *Shortcut* |
 |--------+----------|
 |        |          |
 * Haskell
 * Version Control
-| Action                  | Shortcut |
+| *Action*                  | *Shortcut* |
 |-------------------------+----------|
 | magit-status            | C-x g    |
 | magit toggle whitespace | W        |
@@ -132,11 +132,11 @@
 | popup-diff git-gutter   | F14      |
 | vc-annotate             | C-x v g  |
 * Eshell
-| Action     | Shortcut |
+| *Action*     | *Shortcut* |
 |------------+----------|
 | eshell     | C-x m    |
 | new eshell | C-x M    |
 * Writing
-| Action                   | Shortcut          |
+| *Action*                   | *Shortcut*          |
 |--------------------------+-------------------|
 | writegood-mode           | C-c w             |
