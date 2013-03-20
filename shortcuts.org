@@ -104,10 +104,6 @@
 | org-edit-src-code    | C-c ü    |
 | org-edit-src-exit    | C-c ä    |
 | org-mac-link-grabber | C-c g    |
-* ESS
-| *Action* | *Shortcut* |
-|--------+----------|
-|        |          |
 * \LaTeX
 | *Action*                   | *Shortcut* |
 |--------------------------+----------|
@@ -119,6 +115,14 @@
 | citation  | C-c (    |
 | reference | C-c )    |
 | label     | C-c l    |
+* Writing
+| *Action*                   | *Shortcut*          |
+|--------------------------+-------------------|
+| writegood-mode           | C-c w             |
+* ESS
+| *Action* | *Shortcut* |
+|--------+----------|
+|        |          |
 * Python
 | *Action* | *Shortcut* |
 |--------+----------|
@@ -127,6 +131,10 @@
 | *Action*          | *Shortcut* |
 |-------------------+------------|
 | load file in ghci | C-c C-l    |
+* Scala
+| *Action* | *Shortcut* |
+|----------+------------|
+|          |            |
 * Version Control
 | *Action*                | *Shortcut*   |
 |-------------------------+--------------|
@@ -137,12 +145,12 @@
 | toggle git-gutter       | F13          |
 | popup-diff git-gutter   | F14          |
 | vc-annotate             | C-x v g      |
+* Dired
+| *Action* | *Shortcut* |
+|----------+------------|
+| wdired   | F12        |
 * Eshell
 | *Action*     | *Shortcut* |
 |------------+----------|
 | eshell     | C-x m    |
 | new eshell | C-x M    |
-* Writing
-| *Action*                   | *Shortcut*          |
-|--------------------------+-------------------|
-| writegood-mode           | C-c w             |
