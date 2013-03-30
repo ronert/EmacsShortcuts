@@ -5,47 +5,126 @@
 #+LaTeX_CLASS: rcalibritwocolumn
 #+LaTeX_CLASS_OPTIONS: [english]
 * Help
-| *Action*                      | *Shortcut* |
-|-----------------------------+----------|
-| help-command                | <f1>     |
-| apropos                     | <f1>-a   |
+| *Action*      | *Shortcut* |
+|---------------+------------|
+| help-command  | <f1>       |
+| apropos       | <f1>-a     |
+| describe-mode | <f1>-m     |
 * Buffers, Windows, Frames and Files
-| *Action*                    | *Shortcut* |
-|-----------------------------+------------|
-| find-name-dired             | C-c s      |
-| dired-jump                  | C-x C-j    |
-| find recent file            | C-x f      |
-| rename-current-buffer-file  | C-x w      |
-| delete-current-buffer-file  | C-x C-k    |
-| In ido-find-file go to home | C-c h      |
-|-----------------------------+------------|
-| ibuffer                     | C-x C-b    |
-|-----------------------------+------------|
-| rotate-windows              | C-x -      |
-| find-file-other-window      | C-x M-f    |
-|-----------------------------+------------|
-| create new frame            | C-x C-n    |
+| *Action*                          | *Shortcut*        |
+|-----------------------------------+-------------------|
+| find-name-dired                   | C-c s             |
+| dired-jump                        | C-x C-j           |
+| find recent file                  | C-x f             |
+| rename-current-buffer-file        | C-x w             |
+| delete-current-buffer-file        | C-x C-k           |
+| In ido-find-file go to home       | C-c h             |
+|-----------------------------------+-------------------|
+| ibuffer                           | C-x C-b           |
+|-----------------------------------+-------------------|
+| rotate-windows                    | C-x -             |
+| find-file-other-window            | C-x M-f           |
+|-----------------------------------+-------------------|
+| create new frame                  | C-x C-n           |
+|-----------------------------------+-------------------|
+| winner-undo                       | C-c <up>          |
+| winner-redo                       | C-c <down>        |
+|-----------------------------------+-------------------|
+| split-window-horizontally-instead | C-x vertical line |
+| split-window-vertically-instead   | C-x underscore    |
+
 * Navigation
-| *Action*                          | *Shortcut*  |
-|---------------------------------+-----------|
-| ace-jump-line-mode              | jj        |
-| ace-jump-word-mode              | hh        |
-| jump-char-forward               | kk        |
-| jump-char-backward              | aa        |
-| iy-go-to-char                   | öö        |
-| beginning-of-defun              | C-M-a     |
-| end-of-defun                    | C-M-e     |
-|---------------------------------+-----------|
-| ergoemacs-forward-block         | S-<down>  |
-| ergoemacs-backward-block        | S-<up>    |
-| ergoemacs-backward-open-bracket | S-<left>  |
-| ergoemacs-forward-close-bracket | S-<right> |
+| *Action*                        | *Shortcut*  |
+|---------------------------------+-------------|
+| ace-jump-line-mode              | jj          |
+| ace-jump-word-mode              | hh          |
+| jump-char-forward               | kk          |
+| jump-char-backward              | aa          |
+| iy-go-to-char                   | öö          |
+| beginning-of-defun              | C-M-a       |
+| end-of-defun                    | C-M-e       |
+|---------------------------------+-------------|
+| ergoemacs-forward-block         | S-<down>    |
+| ergoemacs-backward-block        | S-<up>      |
+| ergoemacs-backward-open-bracket | S-<left>    |
+| ergoemacs-forward-close-bracket | S-<right>   |
+|---------------------------------+-------------|
+| es-move-text-right              | C-S-<right> |
+| es-move-text-left               | C-S-<left>  |
+| es-move-text-up                 | C-S-<up>    |
+| es-move-text-down               | C-S-<down>  |
+|---------------------------------+-------------|
+| move up 5 lines                 | C-S-p       |
+| move down 5 lines               | C-S-n       |
+| move right 5 characters         | C-S-f       |
+| move left 5 characters          | C-S-b       |
+* Bookmarks
+| *Action*      | *Shortcut* |
+|---------------+------------|
+| bookmark-set  | C-x r m    |
+| bookmark-list | C-x r l    |
+* Search
+| *Action*                      | *Shortcut* |
+|-------------------------------+------------|
+| multi-occur-in-this-mode      | C-c r      |
+| rgrep                         | C-x C-r    |
+| prelude-ido-goto-symbol       | C-c i      |
+|-------------------------------+------------|
+| ack-and-a-half                | C-c 1      |
+| ack-and-a-half-same           | C-c 2      |
+| ack-and-a-half-find-file      | C-c 3      |
+| ack-and-a-half-find-file-same | C-c 4      |
+|-------------------------------+------------|
+| ag-regexp                     | C-c 5      |
+| ag-project                    | C-c 6      |
+| ag-project-at-point           | C-c 7      |
+| ag-regexp-project-at-point    | C-c 8      |
+|-------------------------------+------------|
+* Projectile
+| *Actions*                                                                                         | *Shortcut* |
+|---------------------------------------------------------------------------------------------------+------------|
+| Display a list of all files in the project. With a prefix argument it will clear the cache first. | C-c p f    |
+| Display a list of all test files(specs, features, etc) in the project.                            | C-c p T    |
+| Run grep on the files in the project.                                                             | C-c p g    |
+| Display a list of all project buffers currently open.                                             | C-c p b    |
+| Runs `multi-occur` on all project buffers currently open.                                         | C-c p o    |
+| Runs interactive query-replace on all files in the projects.                                      | C-c p r    |
+| Invalidates the project cache (if existing).                                                      | C-c p i    |
+| Regenerates the projects `TAGS` file.                                                             | C-c p R    |
+| Kills all project buffers.                                                                        | C-c p k    |
+| Opens the root of the project in `dired`.                                                         | C-c p d    |
+| Shows a list of recently visited project files.                                                   | C-c p e    |
+| Runs `ack` on the project. Requires the presence of `ack-and-a-half`.                             | C-c p a    |
+| Runs a standard compilation command for your type of project.                                     | C-c p l    |
+| Runs a standard test command for your type of project.                                            | C-c p p    |
+| Adds the currently visited to the cache.                                                          | C-c p z    |
+| Display a list of known projects you can switch to.                                               | C-c p s    |
+* Helm
+| *Action*        | *Shortcut* |
+|-----------------+------------|
+| helm-mini       | C-c h      |
+| helm-descbinds  | C-c C-h    |
+| helm-projectile | C-c p h    |
+* Dired
+| *Action* | *Shortcut* |
+|----------+------------|
+| wdired   | F12        |
+* Version Control
+| *Action*                | *Shortcut*   |
+|-------------------------+--------------|
+| magit-status            | C-x g or F16 |
+| magit-init              | F19          |
+| magit-add-remote        | F18          |
+| magit toggle whitespace | W            |
+| toggle git-gutter       | F13          |
+| popup-diff git-gutter   | F14          |
+| vc-annotate             | C-x v g      |
 * Text Manipulation
 | *Action*                    | *Shortcut*        |
 |-----------------------------+-------------------|
 | hippie-expand               | C-. or ..         |
 | auto-complete               | C-, or ,,         |
-| yas-expand                  | C-<tab>           |
+| yas-expand                  | C- -              |
 |-----------------------------+-------------------|
 | browse-kill-ring            | C-x y             |
 | undo-tree-visualize         | C-c v             |
@@ -65,6 +144,7 @@
 |-----------------------------+-------------------|
 | zap-to-char                 | üü                |
 | zap-up-to-char              | ää                |
+| kill-back-to-indentation    | C-M-<backspace>   |
 |-----------------------------+-------------------|
 | comment-or-uncomment-region | C-c c             |
 | uncomment-region            | C-c u             |
@@ -74,36 +154,28 @@
 | mc/mark-all-like-this       | C-ä               |
 | mc/mark-previous-like-this  | C-ü               |
 | mc/mark-next-like-this      | C-ö               |
-| expand-region               | C - - or - -      |
+| expand-region               | - -               |
 | move with expand region     | s-<arrow>         |
-* Projectile and Search
-| *Action*                        | *Shortcut* |
-|-------------------------------+----------|
-| multi-occur-in-this-mode      | C-c r    |
-| rgrep                         | C-x C-r  |
-| prelude-ido-goto-symbol       | C-c i    |
-|-------------------------------+----------|
-| ack-and-a-half                | C-c 1    |
-| ack-and-a-half-same           | C-c 2    |
-| ack-and-a-half-find-file      | C-c 3    |
-| ack-and-a-half-find-file-same | C-c 4    |
-|-------------------------------+----------|
-| ag-regexp                     | C-c 5    |
-| ag-project                    | C-c 6    |
-| ag-project-at-point           | C-c 7    |
-| ag-regexp-project-at-point    | C-c 8    |
 * Macros
 | *Action*                   | *Shortcut*          |
 |--------------------------+-------------------|
 | defining-kbd-macro       | <f3>              |
 | kmacro-end-or-call-macro | <f4>              |
+* Terminal
+| *Action*   | *Shortcut* |
+|------------+------------|
+| eshell     | C-t        |
+| new eshell | C-x M      |
 * Org
-| *Action*               | *Shortcut* |
-|----------------------+----------|
-| org-cdlatex-mode     | C-c ö    |
-| org-edit-src-code    | C-c ü    |
-| org-edit-src-exit    | C-c ä    |
-| org-mac-link-grabber | C-c g    |
+| *Action*             | *Shortcut* |
+|----------------------+------------|
+| org-cdlatex-mode     | C-c ö      |
+| org-edit-src-code    | C-c ü      |
+| org-edit-src-exit    | C-c ä      |
+| org-mac-link-grabber | C-c g      |
+| org-insert-link      | C-c C-l    |
+| org-footnote-action  | C-c C-x f  |
+| org-pretty-entities  | C-c C-x \\ |
 * \LaTeX
 | *Action*                   | *Shortcut* |
 |--------------------------+----------|
@@ -120,9 +192,11 @@
 |--------------------------+-------------------|
 | writegood-mode           | C-c w             |
 * ESS
-| *Action* | *Shortcut* |
-|--------+----------|
-|        |          |
+| *Action*            | *Shortcut* |
+|---------------------+------------|
+| ess-tracebug-prefix | M-p        |
+| ess-bp-set          | F5         |
+| ess-bp-kill         | F6         |
 * Python
 | *Action* | *Shortcut* |
 |--------+----------|
@@ -131,26 +205,6 @@
 | *Action*          | *Shortcut* |
 |-------------------+------------|
 | load file in ghci | C-c C-l    |
-* Scala
-| *Action* | *Shortcut* |
-|----------+------------|
-|          |            |
-* Version Control
-| *Action*                | *Shortcut*   |
-|-------------------------+--------------|
-| magit-status            | C-x g or F16 |
-| magit-init              | F19          |
-| magit-add-remote        | F18          |
-| magit toggle whitespace | W            |
-| toggle git-gutter       | F13          |
-| popup-diff git-gutter   | F14          |
-| vc-annotate             | C-x v g      |
-* Dired
-| *Action* | *Shortcut* |
-|----------+------------|
-| wdired   | F12        |
-* Eshell
-| *Action*     | *Shortcut* |
-|------------+----------|
-| eshell     | C-x m    |
-| new eshell | C-x M    |
+| *Action*             | *Shortcut* |
+|----------------------+------------|
+| inferior sbt session | C-c C-v s  |
