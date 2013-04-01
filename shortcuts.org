@@ -32,7 +32,16 @@
 |-----------------------------------+-------------------|
 | split-window-horizontally-instead | C-x vertical line |
 | split-window-vertically-instead   | C-x underscore    |
-
+|-----------------------------------+-------------------|
+| window-jump-down                  | C-2               |
+| window-jump-up                    | C-8               |
+| window-jump-left                  | C-4               |
+| window-jump-right                 | C-6               |
+|-----------------------------------+-------------------|
+| switch-space                      | C-5               |
+| new-space                         | C-7               |
+| save-space                        | C-9               |
+| kill-space                        | C-1               |
 * Navigation
 | *Action*                        | *Shortcut*  |
 |---------------------------------+-------------|
@@ -61,8 +70,9 @@
 * Bookmarks
 | *Action*      | *Shortcut* |
 |---------------+------------|
-| bookmark-set  | C-x r m    |
-| bookmark-list | C-x r l    |
+| bookmark-set  | F13        |
+| bookmark-list | F14        |
+| bookmark-jump | F15        |
 * Search
 | *Action*                      | *Shortcut* |
 |-------------------------------+------------|
@@ -110,15 +120,64 @@
 |----------+------------|
 | wdired   | F12        |
 * Version Control
-| *Action*                | *Shortcut*   |
-|-------------------------+--------------|
-| magit-status            | C-x g or F16 |
-| magit-init              | F19          |
-| magit-add-remote        | F18          |
-| magit toggle whitespace | W            |
-| toggle git-gutter       | F13          |
-| popup-diff git-gutter   | F14          |
-| vc-annotate             | C-x v g      |
+| *Action*                                                          | *Shortcut*    |
+|-------------------------------------------------------------------+---------------|
+| magit-init                                                        | F17           |
+| magit-status                                                      | C-x g or F16  |
+| refresh status                                                    | g             |
+| *Sections*                                                        |               |
+|-------------------------------------------------------------------+---------------|
+| toggle visibility of current section                              | TAB           |
+| toggle visibility of current section and its children             | S-TAB         |
+| expand current section to detail level                            | 1, 2, 3 and 4 |
+| expand all sections to detail level                               | M-1, 2, 3, 4  |
+|-------------------------------------------------------------------+---------------|
+| *Untracked Files*                                                 |               |
+| stage                                                             | s             |
+| ignore file                                                       | i             |
+| prompt for file to ignore                                         | C-u i         |
+|-------------------------------------------------------------------+---------------|
+| *Staging and Commiting*                                           |               |
+| stage current hunk                                                | s             |
+| unstage current hunk                                              | u             |
+| stage all hunks                                                   | S             |
+| unstage all hunks                                                 | U             |
+| discard uncomitted changes                                        | k             |
+| prepare for commit                                                | c             |
+| execute commit                                                    | C-c C-c       |
+|-------------------------------------------------------------------+---------------|
+| *History*                                                         |               |
+| history                                                           | l             |
+| verbose history                                                   | L             |
+| inspect commit                                                    | RET           |
+| copy sha1 of current commit to kill ring                          | C-w           |
+| show differences between current and marked commits               |               |
+| mark current commit                                               | ..            |
+| unmark current commit if marked                                   | .             |
+| magit toggle whitespace                                           | W             |
+|-------------------------------------------------------------------+---------------|
+| *Diff*                                                            |               |
+| shwo changes between working tree and head                        | d             |
+| show changes between to arbitrary revisions                       | D             |
+| apply current changes to working tree                             | a             |
+|-------------------------------------------------------------------+---------------|
+| *Resetting*                                                       |               |
+| reset current head to chosen revision                             | x             |
+| reset working tree and staging area to most recent commited state | X             |
+|-------------------------------------------------------------------+---------------|
+| *Branching*                                                       |               |
+| switch to different branch                                        | b             |
+| create and switch to new branch                                   | B             |
+|-------------------------------------------------------------------+---------------|
+| *Pushing and Pulling*                                             |               |
+| git push                                                          | P             |
+| git push to specified remote repository                           | C-u P         |
+| git remote update                                                 | f             |
+| git pull                                                          | F             |
+|-------------------------------------------------------------------+---------------|
+| toggle git-gutter                                                 | F18           |
+| popup-diff git-gutter                                             | F19           |
+| vc-annotate                                                       | C-x v g       |
 * Text Manipulation
 | *Action*                    | *Shortcut*        |
 |-----------------------------+-------------------|
@@ -167,15 +226,17 @@
 | eshell     | C-t        |
 | new eshell | C-x M      |
 * Org
-| *Action*             | *Shortcut* |
-|----------------------+------------|
-| org-cdlatex-mode     | C-c ö      |
-| org-edit-src-code    | C-c ü      |
-| org-edit-src-exit    | C-c ä      |
-| org-mac-link-grabber | C-c g      |
-| org-insert-link      | C-c C-l    |
-| org-footnote-action  | C-c C-x f  |
-| org-pretty-entities  | C-c C-x \\ |
+| *Action*              | *Shortcut* |
+|-----------------------+------------|
+| org-cdlatex-mode      | C-c ö      |
+| org-edit-src-code     | C-c ü      |
+| org-edit-src-exit     | C-c ä      |
+| org-mac-link-grabber  | C-c g      |
+| org-insert-link       | C-c C-l    |
+| org-footnote-action   | C-c C-x f  |
+| org-pretty-entities   | C-c C-x \\ |
+|-----------------------+------------|
+| org-table-insert-line | C-c -      |
 * \LaTeX
 | *Action*                   | *Shortcut* |
 |--------------------------+----------|
