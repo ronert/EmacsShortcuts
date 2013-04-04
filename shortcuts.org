@@ -2,7 +2,7 @@
 #+AUTHOR: \color{statblue}Ronert Obst
 #+DATE: \color{statblue}\today
 #+LATEX_CMD: lualatex
-#+LaTeX_CLASS: rcalibritwocolumn
+#+LaTeX_CLASS: rcalibrionecolumn
 #+LaTeX_CLASS_OPTIONS: [english]
 * Help
 | *Action*      | *Shortcut* |
@@ -267,7 +267,6 @@
 | insert new row above the current row         | M-S-down             |
 | insert hline below (C-u : above) current row | C-c -                |
 | insert hline and move to line below it       | C-c RET              |
-| sort lines in region                         | C-c ^                |
 | export as tab-separated file                 | M-x org-table-export |
 | import tab-separated file                    | M-x org-table-import |
 | sum numbers in current column/rectangle      | C-c +                |
