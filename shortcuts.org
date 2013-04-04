@@ -91,24 +91,24 @@
 | ag-regexp-project-at-point    | C-c 8      |
 |-------------------------------+------------|
 * Projectile
-| *Actions*                                                                                         | *Shortcut* |
-|---------------------------------------------------------------------------------------------------+------------|
-| Display a list of all files in the project. With a prefix argument it will clear the cache first. | C-c p f    |
-| Display a list of all test files(specs, features, etc) in the project.                            | C-c p T    |
-| Run grep on the files in the project.                                                             | C-c p g    |
-| Display a list of all project buffers currently open.                                             | C-c p b    |
-| Runs `multi-occur` on all project buffers currently open.                                         | C-c p o    |
-| Runs interactive query-replace on all files in the projects.                                      | C-c p r    |
-| Invalidates the project cache (if existing).                                                      | C-c p i    |
-| Regenerates the projects `TAGS` file.                                                             | C-c p R    |
-| Kills all project buffers.                                                                        | C-c p k    |
-| Opens the root of the project in `dired`.                                                         | C-c p d    |
-| Shows a list of recently visited project files.                                                   | C-c p e    |
-| Runs `ack` on the project. Requires the presence of `ack-and-a-half`.                             | C-c p a    |
-| Runs a standard compilation command for your type of project.                                     | C-c p l    |
-| Runs a standard test command for your type of project.                                            | C-c p p    |
-| Adds the currently visited to the cache.                                                          | C-c p z    |
-| Display a list of known projects you can switch to.                                               | C-c p s    |
+| *Actions*                                          | *Shortcut* |
+|----------------------------------------------------+------------|
+| Display a list of all files in the project         | C-c p f    |
+| Display a list of all test files                   | C-c p T    |
+| Run grep on the files in the project               | C-c p g    |
+| Display a list of all open project buffers         | C-c p b    |
+| Runs `multi-occur` on all open project buffers     | C-c p o    |
+| Runs interactive query-replace  files in  projects | C-c p r    |
+| Invalidates the project cache (if existing)        | C-c p i    |
+| Regenerates the projects `TAGS` file               | C-c p R    |
+| Kills all project buffers                          | C-c p k    |
+| Opens the root of the project in `dired`           | C-c p d    |
+| Shows a list of recently visited project files     | C-c p e    |
+| Runs `ack` on the project                          | C-c p a    |
+| Runs a standard compilation command                | C-c p l    |
+| Runs a standard test command                       | C-c p p    |
+| Adds the currently visited to the cache            | C-c p z    |
+| Display a list of known projects you can switch to | C-c p s    |
 * Helm
 | *Action*        | *Shortcut* |
 |-----------------+------------|
@@ -120,64 +120,65 @@
 |----------+------------|
 | wdired   | F12        |
 * Version Control
-| *Action*                                                          | *Shortcut*    |
-|-------------------------------------------------------------------+---------------|
-| magit-init                                                        | F17           |
-| magit-status                                                      | C-x g or F16  |
-| refresh status                                                    | g             |
-| *Sections*                                                        |               |
-|-------------------------------------------------------------------+---------------|
-| toggle visibility of current section                              | TAB           |
-| toggle visibility of current section and its children             | S-TAB         |
-| expand current section to detail level                            | 1, 2, 3 and 4 |
-| expand all sections to detail level                               | M-1, 2, 3, 4  |
-|-------------------------------------------------------------------+---------------|
-| *Untracked Files*                                                 |               |
-| stage                                                             | s             |
-| ignore file                                                       | i             |
-| prompt for file to ignore                                         | C-u i         |
-|-------------------------------------------------------------------+---------------|
-| *Staging and Commiting*                                           |               |
-| stage current hunk                                                | s             |
-| unstage current hunk                                              | u             |
-| stage all hunks                                                   | S             |
-| unstage all hunks                                                 | U             |
-| discard uncomitted changes                                        | k             |
-| prepare for commit                                                | c             |
-| execute commit                                                    | C-c C-c       |
-|-------------------------------------------------------------------+---------------|
-| *History*                                                         |               |
-| history                                                           | l             |
-| verbose history                                                   | L             |
-| inspect commit                                                    | RET           |
-| copy sha1 of current commit to kill ring                          | C-w           |
-| show differences between current and marked commits               |               |
-| mark current commit                                               | ..            |
-| unmark current commit if marked                                   | .             |
-| magit toggle whitespace                                           | W             |
-|-------------------------------------------------------------------+---------------|
-| *Diff*                                                            |               |
-| shwo changes between working tree and head                        | d             |
-| show changes between to arbitrary revisions                       | D             |
-| apply current changes to working tree                             | a             |
-|-------------------------------------------------------------------+---------------|
-| *Resetting*                                                       |               |
-| reset current head to chosen revision                             | x             |
-| reset working tree and staging area to most recent commited state | X             |
-|-------------------------------------------------------------------+---------------|
-| *Branching*                                                       |               |
-| switch to different branch                                        | b             |
-| create and switch to new branch                                   | B             |
-|-------------------------------------------------------------------+---------------|
-| *Pushing and Pulling*                                             |               |
-| git push                                                          | P             |
-| git push to specified remote repository                           | C-u P         |
-| git remote update                                                 | f             |
-| git pull                                                          | F             |
-|-------------------------------------------------------------------+---------------|
-| toggle git-gutter                                                 | F18           |
-| popup-diff git-gutter                                             | F19           |
-| vc-annotate                                                       | C-x v g       |
+| *Action*                                  | *Shortcut*    |
+|-------------------------------------------+---------------|
+| magit-init                                | F17           |
+| magit-status                              | C-x g or F16  |
+| refresh status                            | g             |
+| *Sections*                                |               |
+|-------------------------------------------+---------------|
+| toggle visibility of current section      | TAB           |
+| toggle visib. of selec. and children      | S-TAB         |
+| expand current sec. to detail level       | 1, 2, 3 and 4 |
+| expand all sec. to detail level           | M-1, 2, 3, 4  |
+|-------------------------------------------+---------------|
+| *Untracked Files*                         |               |
+| stage                                     | s             |
+| ignore file                               | i             |
+| prompt for file to ignore                 | C-u i         |
+|-------------------------------------------+---------------|
+| *Staging and Commiting*                   |               |
+| stage current hunk                        | s             |
+| unstage current hunk                      | u             |
+| stage all hunks                           | S             |
+| unstage all hunks                         | U             |
+| discard uncomitted changes                | k             |
+| prepare for commit                        | c             |
+| execute commit                            | C-c C-c       |
+|-------------------------------------------+---------------|
+| *History*                                 |               |
+| history                                   | l             |
+| verbose history                           | L             |
+| inspect commit                            | RET           |
+| copy sha1 of current commit to kill ring  | C-w           |
+| show diff between current and marked com. |               |
+| mark current commit                       | ..            |
+| unmark current commit if marked           | .             |
+| magit toggle whitespace                   | W             |
+| grep history                              | s             |
+|-------------------------------------------+---------------|
+| *Diff*                                    |               |
+| shwo changes working tree and head        | d             |
+| show changes two arbitrary revisions      | D             |
+| apply current changes to working tree     | a             |
+|-------------------------------------------+---------------|
+| *Resetting*                               |               |
+| reset current head to chosen revision     | x             |
+| reset working tree and staging area       | X             |
+|-------------------------------------------+---------------|
+| *Branching*                               |               |
+| switch to different branch                | b             |
+| create and switch to new branch           | B             |
+|-------------------------------------------+---------------|
+| *Pushing and Pulling*                     |               |
+| git push                                  | P             |
+| git push to specified remote repository   | C-u P         |
+| git remote update                         | f             |
+| git pull                                  | F             |
+|-------------------------------------------+---------------|
+| toggle git-gutter                         | F18           |
+| popup-diff git-gutter                     | F19           |
+| vc-annotate                               | C-x v g       |
 * Text Manipulation
 | *Action*                    | *Shortcut*        |
 |-----------------------------+-------------------|
@@ -226,17 +227,95 @@
 | eshell     | C-t        |
 | new eshell | C-x M      |
 * Org
-| *Action*              | *Shortcut* |
-|-----------------------+------------|
-| org-cdlatex-mode      | C-c ö      |
-| org-edit-src-code     | C-c ü      |
-| org-edit-src-exit     | C-c ä      |
-| org-mac-link-grabber  | C-c g      |
-| org-insert-link       | C-c C-l    |
-| org-footnote-action   | C-c C-x f  |
-| org-pretty-entities   | C-c C-x \\ |
-|-----------------------+------------|
-| org-table-insert-line | C-c -      |
+| *Action*                                     | *Shortcut*           |
+|----------------------------------------------+----------------------|
+| *Headings*                                   |                      |
+| rotate entire buffer visbiliy                | S-TAB                |
+| next/previous heading                        | C-c C-n/p            |
+| next/previous heading, same level            | C-c C-f/b            |
+| backward to higher level heading             | C-c C-u              |
+| jump to another place in document            | C-c C-j              |
+| previous/next plain list item                | S-up/down            |
+| insert new heading/item at current level     | M-RET                |
+| insert new heading after subtree             | C-RET                |
+| insert new TODO entry/checkbox item          | M-S-RET              |
+| insert TODO entry/ckbx after subtree         | C-S-RET              |
+| turn (head)line into item, cycle item type   | C-c -                |
+| turn item/line into headline                 | C-c *                |
+| promote/demote heading                       | M-left/right         |
+| promote/demote current subtree               | M-s-left/right       |
+| move subtree/list item up/down               | M-s-up/down          |
+| clone a subtree                              | C-c C-x c            |
+| copy visible text                            | C-c C-x v            |
+| kill/copy subtree                            | C-c C-x C-w/M-w      |
+| yank subtree                                 | C-c C-x C-y or C-y   |
+| narrow buffer to subtree / widen             | C-x n s/w            |
+|----------------------------------------------+----------------------|
+| *Tables*                                     |                      |
+| convert region to table                      | C-c vertical line    |
+| org-table-insert-line                        | C-c -                |
+| re-align the table without moving the cursor | C-c C-c              |
+| re-align the table, move to next field       | TAB                  |
+| move to previous field                       | S-TAB                |
+| re-align the table, move to next row         | RET                  |
+| move to beginning/end of field               | M-a/e                |
+| move the current column left                 | M-left/right         |
+| kill the current column                      | M-S-left             |
+| insert new column to left of cursor position | M-S-right            |
+| move the current row up/down                 | M-up/down            |
+| kill the current row or horizontal line      | M-S-up               |
+| insert new row above the current row         | M-S-down             |
+| insert hline below (C-u : above) current row | C-c -                |
+| insert hline and move to line below it       | C-c RET              |
+| sort lines in region                         | C-c ^                |
+| export as tab-separated file                 | M-x org-table-export |
+| import tab-separated file                    | M-x org-table-import |
+| sum numbers in current column/rectangle      | C-c +                |
+|----------------------------------------------+----------------------|
+| *Links, Footnotes and Images*                |                      |
+| org-mac-link-grabber                         | C-c g                |
+| org-insert-link                              | C-c C-l              |
+| insert a link (TAB completes stored links)   | C-c C-l              |
+| insert file link with file name completion   | C-u C-c C-l          |
+| edit (also hidden part of) link at point     | C-c C-l              |
+| open file links in emacs                     | C-c C-o              |
+| ...force open in emacs/other window          | C-u C-c C-o          |
+| find next link                               | C-c C-x C-n          |
+| find previous link                           | C-c C-x C-p          |
+| toggle inline display of linked images       | C-c C-x C-v          |
+| org-footnote-action                          | C-c C-x f            |
+|----------------------------------------------+----------------------|
+| *Code and LaTeX*                             |                      |
+| org-edit-src-code                            | C-c ü                |
+| org-edit-src-exit                            | C-c ä                |
+| org-pretty-entities                          | C-c C-x \\           |
+| insert template of export options            | C-c C-e t            |
+| org-cdlatex-mode                             | C-c ö                |
+| preview LaTeX fragment                       | C-c C-x C-l          |
+| expand abbreviation (cdlatex-mode)           | TAB                  |
+| insert/modify math symbol (cdlatex-mode)     | ` / '                |
+| execute code block at point                  | C-c C-c              |
+| open results of code block at point          | C-c C-o              |
+| check code block at point for errors         | C-c C-v c            |
+| insert a header argument with completion     | C-c C-v j            |
+| view expanded body of code block at point    | C-c C-v v            |
+| view information about code block at point   | C-c C-v I            |
+| go to named code block                       | C-c C-v g            |
+| go to named result                           | C-c C-v r            |
+| go to the head of the current code block     | C-c C-v u            |
+| go to the next code block                    | C-c C-v n            |
+| go to the previous code block                | C-c C-v p            |
+| execute all code blocks in current buffer    | C-c C-v b            |
+| execute all code blocks in current subtree   | C-c C-v s            |
+| tangle code blocks in current file           | C-c C-v t            |
+|----------------------------------------------+----------------------|
+| *Items and Checkboxes*                       |                      |
+| rotate the state of the current item         | C-c C-t              |
+| select next/previous state                   | S-left/right         |
+| select next/previous set                     | C-S-left/right       |
+| toggle ORDERED property                      | C-c C-x o            |
+| insert new checkbox item in plain list       | M-S-RET              |
+| toggle checkbox at point                     | C-c C-c              |
 * \LaTeX
 | *Action*                   | *Shortcut* |
 |--------------------------+----------|
