@@ -1,5 +1,5 @@
-% Created 2013-03-20 Wed 17:27
-\documentclass[english]{rcalibritwocolumn}
+% Created 2013-04-05 Fri 10:42
+\documentclass[english]{rcalibrionecolumn}
 
 
 \providecommand{\alert}[1]{\textbf{#1}}
@@ -29,6 +29,7 @@
 \hline
  help-command     &  <f1>               \\
  apropos          &  <f1>-a             \\
+ describe-mode    &  <f1>-m             \\
 \end{tabular}
 \end{center}
 \section{Buffers, Windows, Frames and Files}
@@ -37,21 +38,37 @@
 
 \begin{center}
 \begin{tabular}{ll}
- \textbf{Action}              &  \textbf{Shortcut}  \\
+ \textbf{Action}                    &  \textbf{Shortcut}  \\
 \hline
- find-name-dired              &  C-c s              \\
- dired-jump                   &  C-x C-j            \\
- find recent file             &  C-x f              \\
- rename-current-buffer-file   &  C-x w              \\
- delete-current-buffer-file   &  C-x C-k            \\
- In ido-find-file go to home  &  C-c h              \\
+ find-name-dired                    &  C-c s              \\
+ dired-jump                         &  C-x C-j            \\
+ find recent file                   &  C-x f              \\
+ rename-current-buffer-file         &  C-x w              \\
+ delete-current-buffer-file         &  C-x C-k            \\
+ In ido-find-file go to home        &  C-c h              \\
 \hline
- ibuffer                      &  C-x C-b            \\
+ ibuffer                            &  C-x C-b            \\
 \hline
- rotate-windows               &  C-x -              \\
- find-file-other-window       &  C-x M-f            \\
+ rotate-windows                     &  C-x -              \\
+ find-file-other-window             &  C-x M-f            \\
 \hline
- create new frame             &  C-x C-n            \\
+ create new frame                   &  C-x C-n            \\
+\hline
+ winner-undo                        &  C-c <up>           \\
+ winner-redo                        &  C-c <down>         \\
+\hline
+ split-window-horizontally-instead  &  C-x vertical line  \\
+ split-window-vertically-instead    &  C-x underscore     \\
+\hline
+ window-jump-down                   &  C-2                \\
+ window-jump-up                     &  C-8                \\
+ window-jump-left                   &  C-4                \\
+ window-jump-right                  &  C-6                \\
+\hline
+ switch-space                       &  C-5                \\
+ new-space                          &  C-7                \\
+ save-space                         &  C-9                \\
+ kill-space                         &  C-1                \\
 \end{tabular}
 \end{center}
 \section{Navigation}
@@ -74,52 +91,32 @@
  ergoemacs-backward-block         &  S-<up>             \\
  ergoemacs-backward-open-bracket  &  S-<left>           \\
  ergoemacs-forward-close-bracket  &  S-<right>          \\
+\hline
+ es-move-text-right               &  C-S-<right>        \\
+ es-move-text-left                &  C-S-<left>         \\
+ es-move-text-up                  &  C-S-<up>           \\
+ es-move-text-down                &  C-S-<down>         \\
+\hline
+ move up 5 lines                  &  C-S-p              \\
+ move down 5 lines                &  C-S-n              \\
+ move right 5 characters          &  C-S-f              \\
+ move left 5 characters           &  C-S-b              \\
 \end{tabular}
 \end{center}
-\section{Text Manipulation}
+\section{Bookmarks}
 \label{sec-4}
 
 
 \begin{center}
 \begin{tabular}{ll}
- \textbf{Action}              &  \textbf{Shortcut}  \\
+ \textbf{Action}  &  \textbf{Shortcut}  \\
 \hline
- hippie-expand                &  C-. or ..          \\
- auto-complete                &  C-, or ,,          \\
- yas-expand                   &  C-<tab>            \\
-\hline
- browse-kill-ring             &  C-x y              \\
- undo-tree-visualize          &  C-c v              \\
- query-replace-regexp         &  M-\&               \\
- cleanup-buffer               &  C-c ß              \\
- prelude-cleanup-buffer       &  M-ß                \\
- align-regexp                 &  C-x //             \\
- linum-mode                   &  C-<f6>             \\
-\hline
- open-line-below              &  ii                 \\
- open-line-above              &  uu                 \\
- duplicate-line               &  C-c n              \\
- join-line                    &  C-x a              \\
- move-line-up                 &  M-S-up             \\
- move-line-down               &  M-S-down           \\
- kill-lines                   &  C-c C-<backspace>  \\
-\hline
- zap-to-char                  &  üü                 \\
- zap-up-to-char               &  ää                 \\
-\hline
- comment-or-uncomment-region  &  C-c c              \\
- uncomment-region             &  C-c u              \\
-\hline
- mark-whole-buffer            &  C-c m              \\
- mark-defun                   &  C-M-h              \\
- mc/mark-all-like-this        &  C-ä                \\
- mc/mark-previous-like-this   &  C-ü                \\
- mc/mark-next-like-this       &  C-ö                \\
- expand-region                &  C - - or - -       \\
- move with expand region      &  s-<arrow>          \\
+ bookmark-set     &  F13                \\
+ bookmark-list    &  F14                \\
+ bookmark-jump    &  F15                \\
 \end{tabular}
 \end{center}
-\section{Projectile and Search}
+\section{Search}
 \label{sec-5}
 
 
@@ -140,10 +137,174 @@
  ag-project                     &  C-c 6              \\
  ag-project-at-point            &  C-c 7              \\
  ag-regexp-project-at-point     &  C-c 8              \\
+\hline
+\end{tabular}
+\end{center}
+\section{Projectile}
+\label{sec-6}
+
+
+\begin{center}
+\begin{tabular}{ll}
+ \textbf{Actions}                                    &  \textbf{Shortcut}  \\
+\hline
+ Display a list of all files in the project          &  C-c p f            \\
+ Display a list of all test files                    &  C-c p T            \\
+ Run grep on the files in the project                &  C-c p g            \\
+ Display a list of all open project buffers          &  C-c p b            \\
+ Runs `multi-occur` on all open project buffers      &  C-c p o            \\
+ Runs interactive query-replace  files in  projects  &  C-c p r            \\
+ Invalidates the project cache (if existing)         &  C-c p i            \\
+ Regenerates the projects `TAGS` file                &  C-c p R            \\
+ Kills all project buffers                           &  C-c p k            \\
+ Opens the root of the project in `dired`            &  C-c p d            \\
+ Shows a list of recently visited project files      &  C-c p e            \\
+ Runs `ack` on the project                           &  C-c p a            \\
+ Runs a standard compilation command                 &  C-c p l            \\
+ Runs a standard test command                        &  C-c p p            \\
+ Adds the currently visited to the cache             &  C-c p z            \\
+ Display a list of known projects you can switch to  &  C-c p s            \\
+\end{tabular}
+\end{center}
+\section{Helm}
+\label{sec-7}
+
+
+\begin{center}
+\begin{tabular}{ll}
+ \textbf{Action}  &  \textbf{Shortcut}  \\
+\hline
+ helm-mini        &  C-c h              \\
+ helm-descbinds   &  C-c C-h            \\
+ helm-projectile  &  C-c p h            \\
+\end{tabular}
+\end{center}
+\section{Dired}
+\label{sec-8}
+
+
+\begin{center}
+\begin{tabular}{ll}
+ \textbf{Action}  &  \textbf{Shortcut}  \\
+\hline
+ wdired           &  F12                \\
+\end{tabular}
+\end{center}
+\section{Version Control}
+\label{sec-9}
+
+\begin{longtable}{ll}
+
+ \textbf{Action}                            &  \textbf{Shortcut} \\
+\hline
+\endhead
+\hline\multicolumn{2}{r}{Continued on next page}\
+\endfoot
+\endlastfoot
+ magit-init                                 &  F17                \\
+ magit-status                               &  C-x g or F16       \\
+ refresh status                             &  g                  \\
+ \textbf{Sections}                          &                     \\
+\hline
+ toggle visibility of current section       &  TAB                \\
+ toggle visib. of selec. and children       &  S-TAB              \\
+ expand current sec. to detail level        &  1, 2, 3 and 4      \\
+ expand all sec. to detail level            &  M-1, 2, 3, 4       \\
+\hline
+ \textbf{Untracked Files}                   &                     \\
+ stage                                      &  s                  \\
+ ignore file                                &  i                  \\
+ prompt for file to ignore                  &  C-u i              \\
+\hline
+ \textbf{Staging and Commiting}             &                     \\
+ stage current hunk                         &  s                  \\
+ unstage current hunk                       &  u                  \\
+ stage all hunks                            &  S                  \\
+ unstage all hunks                          &  U                  \\
+ discard uncomitted changes                 &  k                  \\
+ prepare for commit                         &  c                  \\
+ execute commit                             &  C-c C-c            \\
+\hline
+ \textbf{History}                           &                     \\
+ history                                    &  l                  \\
+ verbose history                            &  L                  \\
+ inspect commit                             &  RET                \\
+ copy sha1 of current commit to kill ring   &  C-w                \\
+ show diff between current and marked com.  &                     \\
+ mark current commit                        &  ..                 \\
+ unmark current commit if marked            &  .                  \\
+ magit toggle whitespace                    &  W                  \\
+ grep history                               &  s                  \\
+\hline
+ \textbf{Diff}                              &                     \\
+ shwo changes working tree and head         &  d                  \\
+ show changes two arbitrary revisions       &  D                  \\
+ apply current changes to working tree      &  a                  \\
+\hline
+ \textbf{Resetting}                         &                     \\
+ reset current head to chosen revision      &  x                  \\
+ reset working tree and staging area        &  X                  \\
+\hline
+ \textbf{Branching}                         &                     \\
+ switch to different branch                 &  b                  \\
+ create and switch to new branch            &  B                  \\
+\hline
+ \textbf{Pushing and Pulling}               &                     \\
+ git push                                   &  P                  \\
+ git push to specified remote repository    &  C-u P              \\
+ git remote update                          &  f                  \\
+ git pull                                   &  F                  \\
+\hline
+ toggle git-gutter                          &  F18                \\
+ popup-diff git-gutter                      &  F19                \\
+ vc-annotate                                &  C-x v g            \\
+\end{longtable}
+\section{Text Manipulation}
+\label{sec-10}
+
+
+\begin{center}
+\begin{tabular}{ll}
+ \textbf{Action}              &  \textbf{Shortcut}  \\
+\hline
+ hippie-expand                &  C-. or ..          \\
+ auto-complete                &  C-, or ,,          \\
+ yas-expand                   &  C- -               \\
+\hline
+ browse-kill-ring             &  C-x y              \\
+ undo-tree-visualize          &  C-c v              \\
+ query-replace-regexp         &  M-\&               \\
+ cleanup-buffer               &  C-c ß              \\
+ prelude-cleanup-buffer       &  M-ß                \\
+ align-regexp                 &  C-x //             \\
+ linum-mode                   &  C-<f6>             \\
+\hline
+ open-line-below              &  ii                 \\
+ open-line-above              &  uu                 \\
+ duplicate-line               &  C-c n              \\
+ join-line                    &  C-x a              \\
+ move-line-up                 &  M-S-up             \\
+ move-line-down               &  M-S-down           \\
+ kill-lines                   &  C-c C-<backspace>  \\
+\hline
+ zap-to-char                  &  üü                 \\
+ zap-up-to-char               &  ää                 \\
+ kill-back-to-indentation     &  C-M-<backspace>    \\
+\hline
+ comment-or-uncomment-region  &  C-c c              \\
+ uncomment-region             &  C-c u              \\
+\hline
+ mark-whole-buffer            &  C-c m              \\
+ mark-defun                   &  C-M-h              \\
+ mc/mark-all-like-this        &  C-ä                \\
+ mc/mark-previous-like-this   &  C-ü                \\
+ mc/mark-next-like-this       &  C-ö                \\
+ expand-region                &  - -                \\
+ move with expand region      &  s-<arrow>          \\
 \end{tabular}
 \end{center}
 \section{Macros}
-\label{sec-6}
+\label{sec-11}
 
 
 \begin{center}
@@ -154,32 +315,118 @@
  kmacro-end-or-call-macro  &  <f4>               \\
 \end{tabular}
 \end{center}
-\section{Org}
-\label{sec-7}
-
-
-\begin{center}
-\begin{tabular}{ll}
- \textbf{Action}       &  \textbf{Shortcut}  \\
-\hline
- org-cdlatex-mode      &  C-c ö              \\
- org-edit-src-code     &  C-c ü              \\
- org-edit-src-exit     &  C-c ä              \\
- org-mac-link-grabber  &  C-c g              \\
-\end{tabular}
-\end{center}
-\section{ESS}
-\label{sec-8}
+\section{Terminal}
+\label{sec-12}
 
 
 \begin{center}
 \begin{tabular}{ll}
  \textbf{Action}  &  \textbf{Shortcut}  \\
 \hline
+ eshell           &  C-t                \\
+ new eshell       &  C-x M              \\
 \end{tabular}
 \end{center}
+\section{Org}
+\label{sec-13}
+
+\begin{longtable}{ll}
+
+ \textbf{Action}                               &  \textbf{Shortcut}    \\
+\hline
+\endhead
+\hline\multicolumn{2}{r}{Continued on next page}\
+\endfoot
+\endlastfoot
+ \textbf{Headings}                             &                        \\
+ rotate entire buffer visbiliy                 &  S-TAB                 \\
+ next/previous heading                         &  C-c C-n/p             \\
+ next/previous heading, same level             &  C-c C-f/b             \\
+ backward to higher level heading              &  C-c C-u               \\
+ jump to another place in document             &  C-c C-j               \\
+ previous/next plain list item                 &  S-up/down             \\
+ insert new heading/item at current level      &  M-RET                 \\
+ insert new heading after subtree              &  C-RET                 \\
+ insert new TODO entry/checkbox item           &  M-S-RET               \\
+ insert TODO entry/ckbx after subtree          &  C-S-RET               \\
+ turn (head)line into item, cycle item type    &  C-c -                 \\
+ turn item/line into headline                  &  C-c *                 \\
+ promote/demote heading                        &  M-left/right          \\
+ promote/demote current subtree                &  M-s-left/right        \\
+ move subtree/list item up/down                &  M-s-up/down           \\
+ clone a subtree                               &  C-c C-x c             \\
+ copy visible text                             &  C-c C-x v             \\
+ kill/copy subtree                             &  C-c C-x C-w/M-w       \\
+ yank subtree                                  &  C-c C-x C-y or C-y    \\
+ narrow buffer to subtree / widen              &  C-x n s/w             \\
+\hline
+ \textbf{Tables}                               &                        \\
+ convert region to table                       &  C-c vertical line     \\
+ org-table-insert-line                         &  C-c -                 \\
+ re-align the table without moving the cursor  &  C-c C-c               \\
+ re-align the table, move to next field        &  TAB                   \\
+ move to previous field                        &  S-TAB                 \\
+ re-align the table, move to next row          &  RET                   \\
+ move to beginning/end of field                &  M-a/e                 \\
+ move the current column left                  &  M-left/right          \\
+ kill the current column                       &  M-S-left              \\
+ insert new column to left of cursor position  &  M-S-right             \\
+ move the current row up/down                  &  M-up/down             \\
+ kill the current row or horizontal line       &  M-S-up                \\
+ insert new row above the current row          &  M-S-down              \\
+ insert hline below (C-u : above) current row  &  C-c -                 \\
+ insert hline and move to line below it        &  C-c RET               \\
+ export as tab-separated file                  &  M-x org-table-export  \\
+ import tab-separated file                     &  M-x org-table-import  \\
+ sum numbers in current column/rectangle       &  C-c +                 \\
+\hline
+ \textbf{Links, Footnotes and Images}          &                        \\
+ org-mac-link-grabber                          &  C-c g                 \\
+ org-insert-link                               &  C-c C-l               \\
+ insert a link (TAB completes stored links)    &  C-c C-l               \\
+ insert file link with file name completion    &  C-u C-c C-l           \\
+ edit (also hidden part of) link at point      &  C-c C-l               \\
+ open file links in emacs                      &  C-c C-o               \\
+ \ldots{}force open in emacs/other window      &  C-u C-c C-o           \\
+ find next link                                &  C-c C-x C-n           \\
+ find previous link                            &  C-c C-x C-p           \\
+ toggle inline display of linked images        &  C-c C-x C-v           \\
+ org-footnote-action                           &  C-c C-x f             \\
+\hline
+ \textbf{Code and \LaTeX{}}                    &                        \\
+ org-edit-src-code                             &  C-c ü                 \\
+ org-edit-src-exit                             &  C-c ä                 \\
+ org-pretty-entities                           &  C-c C-x \\            \\
+ insert template of export options             &  C-c C-e t             \\
+ org-cdlatex-mode                              &  C-c ö                 \\
+ preview \LaTeX{} fragment                     &  C-c C-x C-l           \\
+ expand abbreviation (cdlatex-mode)            &  TAB                   \\
+ insert/modify math symbol (cdlatex-mode)      &  ` / `                 \\
+ execute code block at point                   &  C-c C-c               \\
+ open results of code block at point           &  C-c C-o               \\
+ check code block at point for errors          &  C-c C-v c             \\
+ insert a header argument with completion      &  C-c C-v j             \\
+ view expanded body of code block at point     &  C-c C-v v             \\
+ view information about code block at point    &  C-c C-v I             \\
+ go to named code block                        &  C-c C-v g             \\
+ go to named result                            &  C-c C-v r             \\
+ go to the head of the current code block      &  C-c C-v u             \\
+ go to the next code block                     &  C-c C-v n             \\
+ go to the previous code block                 &  C-c C-v p             \\
+ execute all code blocks in current buffer     &  C-c C-v b             \\
+ execute all code blocks in current subtree    &  C-c C-v s             \\
+ tangle code blocks in current file            &  C-c C-v t             \\
+\hline
+ \textbf{Items and Checkboxes}                 &                        \\
+ rotate the state of the current item          &  C-c C-t               \\
+ select next/previous state                    &  S-left/right          \\
+ select next/previous set                      &  C-S-left/right        \\
+ toggle ORDERED property                       &  C-c C-x o             \\
+ insert new checkbox item in plain list        &  M-S-RET               \\
+ toggle checkbox at point                      &  C-c C-c               \\
+\end{longtable}
 \section{\LaTeX}
-\label{sec-9}
+\label{sec-14}
 
 
 \begin{center}
@@ -191,7 +438,7 @@
 \end{tabular}
 \end{center}
 \section{Ref\TeX}
-\label{sec-10}
+\label{sec-15}
 
 
 \begin{center}
@@ -203,8 +450,32 @@
  label            &  C-c l              \\
 \end{tabular}
 \end{center}
+\section{Writing}
+\label{sec-16}
+
+
+\begin{center}
+\begin{tabular}{ll}
+ \textbf{Action}  &  \textbf{Shortcut}  \\
+\hline
+ writegood-mode   &  C-c w              \\
+\end{tabular}
+\end{center}
+\section{ESS}
+\label{sec-17}
+
+
+\begin{center}
+\begin{tabular}{ll}
+ \textbf{Action}      &  \textbf{Shortcut}  \\
+\hline
+ ess-tracebug-prefix  &  M-p                \\
+ ess-bp-set           &  F5                 \\
+ ess-bp-kill          &  F6                 \\
+\end{tabular}
+\end{center}
 \section{Python}
-\label{sec-11}
+\label{sec-18}
 
 
 \begin{center}
@@ -214,54 +485,17 @@
 \end{tabular}
 \end{center}
 \section{Haskell}
-\label{sec-12}
+\label{sec-19}
 
 
 \begin{center}
 \begin{tabular}{ll}
- \textbf{Action}    &  \textbf{Shortcut}  \\
+ \textbf{Action}       &  \textbf{Shortcut}  \\
 \hline
- load file in ghci  &  C-c C-l            \\
-\end{tabular}
-\end{center}
-\section{Version Control}
-\label{sec-13}
-
-
-\begin{center}
-\begin{tabular}{ll}
- \textbf{Action}          &  \textbf{Shortcut}  \\
+ load file in ghci     &  C-c C-l            \\
+ \textbf{Action}       &  \textbf{Shortcut}  \\
 \hline
- magit-status             &  C-x g or F16       \\
- magit-init               &  F19                \\
- magit-add-remote         &  F18                \\
- magit toggle whitespace  &  W                  \\
- toggle git-gutter        &  F13                \\
- popup-diff git-gutter    &  F14                \\
- vc-annotate              &  C-x v g            \\
-\end{tabular}
-\end{center}
-\section{Eshell}
-\label{sec-14}
-
-
-\begin{center}
-\begin{tabular}{ll}
- \textbf{Action}  &  \textbf{Shortcut}  \\
-\hline
- eshell           &  C-x m              \\
- new eshell       &  C-x M              \\
-\end{tabular}
-\end{center}
-\section{Writing}
-\label{sec-15}
-
-
-\begin{center}
-\begin{tabular}{ll}
- \textbf{Action}  &  \textbf{Shortcut}  \\
-\hline
- writegood-mode   &  C-c w              \\
+ inferior sbt session  &  C-c C-v s          \\
 \end{tabular}
 \end{center}
 
