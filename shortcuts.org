@@ -120,6 +120,7 @@
 |----------+------------|
 | wdired   | F12        |
 * Version Control
+#+ATTR_LaTeX: longtable
 | *Action*                                  | *Shortcut*    |
 |-------------------------------------------+---------------|
 | magit-init                                | F17           |
@@ -227,6 +228,7 @@
 | eshell     | C-t        |
 | new eshell | C-x M      |
 * Org
+#+ATTR_LaTeX: longtable
 | *Action*                                     | *Shortcut*           |
 |----------------------------------------------+----------------------|
 | *Headings*                                   |                      |
