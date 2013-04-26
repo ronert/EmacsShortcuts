@@ -5,11 +5,13 @@
 #+LaTeX_CLASS: rcalibrionecolumn
 #+LaTeX_CLASS_OPTIONS: [english]
 * Help
-| *Action*      | *Shortcut* |
-|---------------+------------|
-| help-command  | <f1>       |
-| apropos       | <f1>-a     |
-| describe-mode | <f1>-m     |
+| *Action*       | *Shortcut* |
+|----------------+------------|
+| help-command   | <f1>       |
+| apropos        | <f1>-a     |
+| describe-mode  | <f1>-m     |
+| google-this    | C-c / t    |
+| helm-descbinds | C-c C-h    |
 * Buffers, Windows, Frames and Files
 | *Action*                          | *Shortcut*        |
 |-----------------------------------+-------------------|
@@ -195,17 +197,19 @@
 | align-regexp                | C-x //            |
 | linum-mode                  | C-<f6>            |
 |-----------------------------+-------------------|
-| open-line-below             | ii                |
-| open-line-above             | uu                |
+| open-line-below             | uu                |
+| open-line-above             | ii                |
 | duplicate-line              | C-c n             |
 | join-line                   | C-x a             |
 | move-line-up                | M-S-up            |
 | move-line-down              | M-S-down          |
-| kill-lines                  | C-c C-<backspace> |
 |-----------------------------+-------------------|
 | zap-to-char                 | üü                |
 | zap-up-to-char              | ää                |
+| kill-lines                  | C-c C-<backspace> |
+| kill-whole-line             | C-S-<backspace>   |
 | kill-back-to-indentation    | C-M-<backspace>   |
+| kill-line-backwards         | C-<backspace>     |
 |-----------------------------+-------------------|
 | comment-or-uncomment-region | C-c c             |
 | uncomment-region            | C-c u             |
@@ -287,6 +291,7 @@
 | org-footnote-action                          | C-c C-x f            |
 |----------------------------------------------+----------------------|
 | *Code and LaTeX*                             |                      |
+| org-mark-element                             | M-h                  |
 | org-edit-src-code                            | C-c ü                |
 | org-edit-src-exit                            | C-c ä                |
 | org-pretty-entities                          | C-c C-x \\           |
@@ -346,6 +351,3 @@
 | *Action*          | *Shortcut* |
 |-------------------+------------|
 | load file in ghci | C-c C-l    |
-| *Action*             | *Shortcut* |
-|----------------------+------------|
-| inferior sbt session | C-c C-v s  |
