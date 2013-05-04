@@ -107,7 +107,7 @@
 | Opens the root of the project in `dired`           | C-c p d    |
 | Shows a list of recently visited project files     | C-c p e    |
 | Runs `ack` on the project                          | C-c p a    |
-| Runs a standard compilation command                | C-c p l    |
+| Runs a standard compilation command                | C-c p c    |
 | Runs a standard test command                       | C-c p p    |
 | Adds the currently visited to the cache            | C-c p z    |
 | Display a list of known projects you can switch to | C-c p s    |
@@ -229,7 +229,7 @@
 * Terminal
 | *Action*   | *Shortcut* |
 |------------+------------|
-| eshell     | C-t        |
+| eshell     | C-x m      |
 | new eshell | C-x M      |
 * Org
 #+ATTR_LaTeX: longtable
@@ -345,8 +345,10 @@
 | ess-bp-kill         | F6         |
 * Python
 | *Action* | *Shortcut* |
-|--------+----------|
-|        |          |
+|----------+------------|
+| *elpy*   |            |
+|----------+------------|
+| *ein*    |            |
 * Haskell
 | *Action*          | *Shortcut* |
 |-------------------+------------|
