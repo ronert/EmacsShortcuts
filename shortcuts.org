@@ -344,11 +344,43 @@
 | ess-bp-set          | F5         |
 | ess-bp-kill         | F6         |
 * Python
-| *Action* | *Shortcut* |
-|----------+------------|
-| *elpy*   |            |
-|----------+------------|
-| *ein*    |            |
+| *Action*                                                             | *Shortcut*  |
+|----------------------------------------------------------------------+-------------|
+| *Editing*                                                            |             |
+| ac-trigger-key,                      indentation,               etc. | TAB         |
+| python-indent-dedent-line-backspace                                  | <backspace> |
+| python-indent-dedent-line                                            | <backtab>   |
+| <                                    python-indent-shift-left        | C-c         |
+| >                                    python-indent-shift-right       | C-c         |
+| C-i                                  yasnippet-expand                | C-c         |
+| iedit-mode                                                           | M-,         |
+| *Navigation*                                                         |             |
+| elpy-forward-definition                                              | M-n, C-down |
+| elpy-backward-definition                                             | M-p, C-up   |
+| elpy-nav-backward-statement                                          | M-a         |
+| elpy-nav-forward-statement                                           | M-e         |
+| elpy-goto-definition                                                 | M-.         |
+| find-file-in-project                                                 | C-c C-f     |
+| idomenu                                                              | C-c C-j     |
+| elpy-flymake-forward-error                                           | C-c C-n     |
+| elpy-flymake-backward-error                                          | C-c C-p     |
+| elpy-occur-definitions                                               | C-c C-o     |
+| elpy-show-defun                                                      | C-c C-q     |
+| elpy-rgrep-symbol                                                    | C-c C-s     |
+| *Interactive Shell*                                                  |             |
+| python-shell-switch-to-shell                                         | C-c C-z     |
+| elpy-shell-send-region-or-buffer                                     | C-c C-c     |
+| python-shell-send-defun                                              | C-M-x       |
+| *Documentation*                                                      |             |
+| elpy-doc                                                             | C-c C-d     |
+| elpy-doc-websearch                                                   | C-c C-w     |
+| *Code Quality*                                                       |             |
+| elpy-test                                                            | C-c C-t     |
+| elpy-check                                                           | C-c C-v     |
+| *Virtualenvs*                                                        |             |
+| virtualenv-workon                                                    | M-x         |
+|----------------------------------------------------------------------+-------------|
+| *ein*                                                                |             |
 * Haskell
 | *Action*          | *Shortcut* |
 |-------------------+------------|
