@@ -6,9 +6,10 @@
 * Help
 | *Action*       | *Shortcut* |
 |----------------+------------|
-| help-command   | <f1>       |
-| apropos        | <f1>-a     |
-| describe-mode  | <f1>-m     |
+| help-command   | C-h        |
+| apropos        | C-h a      |
+| describe-mode  | C-h m      |
+| info           | C-h i      |
 | google-this    | C-c / t    |
 | helm-descbinds | C-c C-h    |
 * Buffers, Windows, Frames and Files
