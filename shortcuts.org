@@ -19,6 +19,7 @@
 | find-name-dired                                                             | C-c s             |
 | dired-jump                                                                  | C-x C-j           |
 | find recent file                                                            | C-x f             |
+| find recent file using fasd                                                 | C-c f             |
 | rename-current-buffer-file                                                  | C-x w             |
 | delete-current-buffer-file                                                  | C-x C-k           |
 | In ido-find-file go to home                                                 | C-c h             |
@@ -39,89 +40,90 @@
 | window-jump-down                                                            | C-2, S-<down>     |
 | window-jump-up                                                              | C-8, S-<up>       |
 | window-jump-left                                                            | C-4, S-<left>     |
-| window-jump-right                                                           | C-6, S-           |
+| window-jump-right                                                           | C-6, S-<right>    |
 |-----------------------------------------------------------------------------+-------------------|
 | *Workgroups*                                                                |                   |
-| Switch to a workgroup                                                       | C-z v             |
-| Create a new workgroup and switch to it                                     | C-z c             |
-| Create a clone of the current workgroug and switch to it                    | C-z C             |
-| Kill a workgroup                                                            | C-z k             |
-| Save the current workgroup's base config to the kill ring                   | C-z M-W           |
-| Save the current workgroup's working config to the kill ring                | C-z M-w           |
-| Yank a config from the kill ring into the current frame                     | C-z y             |
-| Kill a workgroup and all buffers visible in it                              | C-z M-k           |
-| Delete all but the specified workgroup                                      | C-z K             |
-| Update a workgroup's base config with its working config                    | C-z u             |
-| Update all workgroups' base configs with their working configs              | C-z U             |
-| Revert a workgroup's working config to its base config                      | C-z r             |
-| Revert all workgroups' working configs to their base configs                | C-z R             |
-| Jump to a workgroup by its index in the workgroups list                     | C-z j             |
-| Switch to the workgroup at index 0                                          | C-z 0             |
-| Switch to the workgroup at index 1                                          | C-z 1             |
-| Switch to the workgroup at index 2                                          | C-z 2             |
-| Switch to the workgroup at index 3                                          | C-z 3             |
-| Switch to the workgroup at index 4                                          | C-z 4             |
-| Switch to the workgroup at index 5                                          | C-z 5             |
-| Switch to the workgroup at index 6                                          | C-z 6             |
-| Switch to the workgroup at index 7                                          | C-z 7             |
-| Switch to the workgroup at index 8                                          | C-z 8             |
-| Switch to the workgroup at index 9                                          | C-z 9             |
-| Switch to the workgroup leftward cyclically in the workgroups list          | C-z p             |
-| Switch to the workgroup rightward cyclically in the workgroups list         | C-z n             |
-| Like `wg-switch-left', but operates in the next frame                       | C-z M-p           |
-| Like `wg-switch-right', but operates in the next frame                      | C-z M-n           |
-| Switch to the previously selected workgroup                                 | C-z a             |
-| Swap the positions of the current and previous workgroups                   | C-z C-x           |
-| Offset a workgroup's position leftward cyclically in the workgroups list    | C-z C-,           |
-| Offset a workgroup's position rightward cyclically in the workgroups list   | C-z C-.           |
-| Rename a workgroup                                                          | C-z A             |
-| Reset Workgroups' entire state.                                             | C-z !             |
-| Save the workgroup list to a file                                           | C-z C-s           |
-| Load a workgroups list from a file                                          | C-z C-l           |
-| Create a new blank workgroup and find a file in it                          | C-z C-f           |
-| Create a new blank workgroup and find a file read-only in it                | C-z C-S-f         |
-| Switch to the workgroup and config in which the specified buffer is visible | C-z b             |
-| Create a new blank workgroup and open a dired buffer in it                  | C-z d             |
-| Move `selected-window' backward in its wlist                                | C-z <             |
-| Move `selected-window' forward in its wlist                                 | C-z >             |
-| Reverse the order of all horizontall window lists.                          | C-z               |
-| Reverse the order of all vertical window lists.                             | C-z -             |
-| Reverse the order of all window lists.                                      | C-z +             |
-| Toggle Workgroups' mode-line display                                        | C-z TAB           |
-| Toggle the morph animation on any wconfig change                            | C-z C-w           |
-| Display the name of the current workgroup in the echo area                  | C-z E             |
-| Display the names of all workgroups in the echo area                        | C-z e             |
-| Display the current time in the echo area                                   | C-z t             |
-| Display the current version of Workgroups in the echo area                  | C-z V             |
-| Display the last message Workgroups sent to the echo area in the echo area. | C-z m             |
-| Show this help message                                                      | C-z ?             |
+| Switch to a workgroup                                                       | C-y v             |
+| Create a new workgroup and switch to it                                     | C-y c             |
+| Create a clone of the current workgroug and switch to it                    | C-y C             |
+| Kill a workgroup                                                            | C-y k             |
+| Save the current workgroup's base config to the kill ring                   | C-y M-W           |
+| Save the current workgroup's working config to the kill ring                | C-y M-w           |
+| Yank a config from the kill ring into the current frame                     | C-y y             |
+| Kill a workgroup and all buffers visible in it                              | C-y M-k           |
+| Delete all but the specified workgroup                                      | C-y K             |
+| Update a workgroup's base config with its working config                    | C-y u             |
+| Update all workgroups' base configs with their working configs              | C-y U             |
+| Revert a workgroup's working config to its base config                      | C-y r             |
+| Revert all workgroups' working configs to their base configs                | C-y R             |
+| Jump to a workgroup by its index in the workgroups list                     | C-y j             |
+| Switch to the workgroup at index 0                                          | C-y 0             |
+| Switch to the workgroup at index 1                                          | C-y 1             |
+| Switch to the workgroup at index 2                                          | C-y 2             |
+| Switch to the workgroup at index 3                                          | C-y 3             |
+| Switch to the workgroup at index 4                                          | C-y 4             |
+| Switch to the workgroup at index 5                                          | C-y 5             |
+| Switch to the workgroup at index 6                                          | C-y 6             |
+| Switch to the workgroup at index 7                                          | C-y 7             |
+| Switch to the workgroup at index 8                                          | C-y 8             |
+| Switch to the workgroup at index 9                                          | C-y 9             |
+| Switch to the workgroup leftward cyclically in the workgroups list          | C-y p             |
+| Switch to the workgroup rightward cyclically in the workgroups list         | C-y n             |
+| Like `wg-switch-left', but operates in the next frame                       | C-y M-p           |
+| Like `wg-switch-right', but operates in the next frame                      | C-y M-n           |
+| Switch to the previously selected workgroup                                 | C-y a             |
+| Swap the positions of the current and previous workgroups                   | C-y C-x           |
+| Offset a workgroup's position leftward cyclically in the workgroups list    | C-y C-,           |
+| Offset a workgroup's position rightward cyclically in the workgroups list   | C-y C-.           |
+| Rename a workgroup                                                          | C-y A             |
+| Reset Workgroups' entire state.                                             | C-y !             |
+| Save the workgroup list to a file                                           | C-y C-s           |
+| Load a workgroups list from a file                                          | C-y C-l           |
+| Create a new blank workgroup and find a file in it                          | C-y C-f           |
+| Create a new blank workgroup and find a file read-only in it                | C-y C-S-f         |
+| Switch to the workgroup and config in which the specified buffer is visible | C-y b             |
+| Create a new blank workgroup and open a dired buffer in it                  | C-y d             |
+| Move `selected-window' backward in its wlist                                | C-y <             |
+| Move `selected-window' forward in its wlist                                 | C-y >             |
+| Reverse the order of all horizontall window lists.                          | C-y               |
+| Reverse the order of all vertical window lists.                             | C-y -             |
+| Reverse the order of all window lists.                                      | C-y +             |
+| Toggle Workgroups' mode-line display                                        | C-y TAB           |
+| Toggle the morph animation on any wconfig change                            | C-y C-w           |
+| Display the name of the current workgroup in the echo area                  | C-y E             |
+| Display the names of all workgroups in the echo area                        | C-y e             |
+| Display the current time in the echo area                                   | C-y t             |
+| Display the current version of Workgroups in the echo area                  | C-y V             |
+| Display the last message Workgroups sent to the echo area in the echo area. | C-y m             |
+| Show this help message                                                      | C-y ?             |
 * Navigation
-| *Action*                        | *Shortcut*  |
-|---------------------------------+-------------|
-| ace-jump-line-mode              | jj          |
-| ace-jump-word-mode              | hh          |
-| jump-char-forward               | kk          |
-| jump-char-backward              | aa          |
-| iy-go-to-char                   | öö          |
-| beginning-of-defun              | C-M-a       |
-| end-of-defun                    | C-M-e       |
-| goto-last-change                | C-+         |
-|---------------------------------+-------------|
-| es-move-text-right              | C-S-<right> |
-| es-move-text-left               | C-S-<left>  |
-| es-move-text-up                 | C-S-<up>    |
-| es-move-text-down               | C-S-<down>  |
-|---------------------------------+-------------|
-| move up 5 lines                 | C-S-p       |
-| move down 5 lines               | C-S-n       |
-| move right 5 characters         | C-S-f       |
-| move left 5 characters          | C-S-b       |
+| *Action*                | *Shortcut*  |
+|-------------------------+-------------|
+| ace-jump-line-mode      | jj          |
+| ace-jump-word-mode      | hh          |
+| jump-char-forward       | kk          |
+| jump-char-backward      | aa          |
+| iy-go-to-char           | öö          |
+| beginning-of-defun      | C-M-a       |
+| end-of-defun            | C-M-e       |
+| goto-last-change        | C-+         |
+| goto-line               | M-g M-g     |
+|-------------------------+-------------|
+| es-move-text-right      | C-S-<right> |
+| es-move-text-left       | C-S-<left>  |
+| es-move-text-up         | C-S-<up>    |
+| es-move-text-down       | C-S-<down>  |
+|-------------------------+-------------|
+| move up 5 lines         | C-S-p       |
+| move down 5 lines       | C-S-n       |
+| move right 5 characters | C-S-f       |
+| move left 5 characters  | C-S-b       |
 * Bookmarks
 | *Action*      | *Shortcut* |
 |---------------+------------|
-| bookmark-set  | F13        |
+| bookmark-jump | F13        |
 | bookmark-list | F14        |
-| bookmark-jump | F15        |
+| bookmark-set  | F15        |
 * Search
 | *Action*                      | *Shortcut* |
 |-------------------------------+------------|
@@ -236,9 +238,9 @@
 | auto-complete               | C-. or ,.         |
 | yas-expand                  | C- -              |
 |-----------------------------+-------------------|
-| browse-kill-ring            | C-x y             |
-| undo-tree-visualize         | C-c v             |
+| browse-kill-ring            | C-x z             |
 | query-replace-regexp        | M-&               |
+| query-replace               | C-c q             |
 | cleanup-buffer              | C-c ß             |
 | prelude-cleanup-buffer      | M-ß               |
 | align-regexp                | C-x //            |
@@ -247,7 +249,7 @@
 | open-line-below             | uu                |
 | open-line-above             | ii                |
 | duplicate-line              | C-c n             |
-| join-line                   | C-x a             |
+| join-line                   | M-j, C-x a        |
 | move-line-up                | M-S-up            |
 | move-line-down              | M-S-down          |
 |-----------------------------+-------------------|
@@ -267,7 +269,8 @@
 | mc/mark-all-like-this       | C-ä               |
 | mc/mark-previous-like-this  | C-ü               |
 | mc/mark-next-like-this      | C-ö               |
-| expand-region               | ,.                |
+| mc/edit-lines               | vv                |
+| expand-region               | C-#               |
 | move with expand region     | s-<arrow>         |
 * Macros
 | *Action*                   | *Shortcut*          |
@@ -386,11 +389,13 @@
 |--------------------------+-------------------|
 | writegood-mode           | C-c w             |
 * ESS
-| *Action*            | *Shortcut* |
-|---------------------+------------|
-| ess-tracebug-prefix | M-p        |
-| ess-bp-set          | F5         |
-| ess-bp-kill         | F6         |
+| *Action*              | *Shortcut* |
+|-----------------------+------------|
+| ess-tracebug-prefix   | M-p        |
+| ess-bp-set            | F5         |
+| ess-bp-kill           | F6         |
+| beginning of function | C-M-a      |
+| end of function       | C-M-e      |
 * Python
 #+ATTR_LaTeX: :environment longtable
 | *Action*                                                             | *Shortcut*  |
@@ -434,3 +439,4 @@
 | *Action*          | *Shortcut* |
 |-------------------+------------|
 | load file in ghci | C-c C-l    |
+| Hoogle Query      | C-c h      |
