@@ -12,6 +12,25 @@
 | info           | C-h i      |
 | google-this    | C-c / t    |
 | helm-descbinds | C-c C-h    |
+* Key-Chords
+| *Action*           | *Shortcut*            |
+|--------------------+-----------------------|
+| [                  | xc                    |
+| ]                  | bn                    |
+| {                  | yx                    |
+| }                  | nm                    |
+| /                  | qw                    |
+| \                  | ü+                    |
+| jump-char-forward  | hh                    |
+| jump-char-backward | aa                    |
+| iy-goto-char       | öö                    |
+| hippie-expand      | ,,                    |
+| auto-complete      | ,.                    |
+| ace-jump-line-mode | jj                    |
+| ace-jump-word-mode | kk                    |
+| ii                 | smart-open-line-above |
+| uu                 | open-line-below       |
+| zz                 | just-one-space        |
 * Buffers, Windows, Frames and Files
 #+ATTR_LaTeX: :environment longtable
 | *Action*                                                                    | *Shortcut*        |
@@ -143,7 +162,7 @@
 |-------------------------------+------------|
 | dash-at-point                 | C-c d      |
 
-* Projectile
+* Projectile 
 | *Actions*                                          | *Shortcut* |
 |----------------------------------------------------+------------|
 | Display a list of all files in the project         | C-c p f    |
