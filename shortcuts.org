@@ -121,9 +121,9 @@
 * Bookmarks
 | *Action*      | *Shortcut* |
 |---------------+------------|
-| bookmark-jump | F13        |
-| bookmark-list | F14        |
-| bookmark-set  | F15        |
+| bookmark-jump | F7         |
+| bookmark-set  | F8         |
+| bookmark-list | F9         |
 * Search
 | *Action*                      | *Shortcut* |
 |-------------------------------+------------|
@@ -141,6 +141,8 @@
 | ag-project-at-point           | C-c 7      |
 | ag-regexp-project-at-point    | C-c 8      |
 |-------------------------------+------------|
+| dash-at-point                 | C-c d      |
+
 * Projectile
 | *Actions*                                          | *Shortcut* |
 |----------------------------------------------------+------------|
@@ -228,8 +230,8 @@
 | git remote update                         | f             |
 | git pull                                  | F             |
 |-------------------------------------------+---------------|
-| toggle git-gutter                         | F18           |
-| popup-diff git-gutter                     | F19           |
+| toggle git-gutter                         | C-=           |
+| popup-diff git-gutter                     | C-M-=         |
 | vc-annotate                               | C-x v g       |
 * Text Manipulation
 | *Action*                    | *Shortcut*        |
@@ -374,10 +376,21 @@
 | insert new checkbox item in plain list       | M-S-RET              |
 | toggle checkbox at point                     | C-c C-c              |
 * \LaTeX
-| *Action*                   | *Shortcut* |
-|--------------------------+----------|
-| LaTeX-math-abbrev-prefix | C-c m    |
-| TeX-texify               | C-c C-a  |
+| *Action*                      | *Shortcut* |
+|-------------------------------+------------|
+| LaTeX-math-abbrev-prefix      | C-c m      |
+| TeX-texify                    | C-c C-a    |
+| compile-commands-until-done   | C-c C-a    |
+| next-section                  | C-c C-n    |
+| up-section                    | C-c C-u    |
+| next-section-same-level       | C-c C-f    |
+| forward-environment           | C-c C-f    |
+| end-of-environment            | C-M-e      |
+| backward-environment          | C-M-b      |
+| beginning-of-environment      | C-M-a      |
+| previous section              | C-c C-p    |
+| previous-section-same-level   | C-c C-b    |
+| clean-fill-indent-environment | C-c C-q    |
 * Ref\TeX
 | *Action*    | *Shortcut* |
 |-----------+----------|
@@ -440,3 +453,8 @@
 |-------------------+------------|
 | load file in ghci | C-c C-l    |
 | Hoogle Query      | C-c h      |
+* Scala
+| *Action*                 | *Shortcut* |
+|--------------------------+------------|
+| sbt-find-definitions     | M-.        |
+| sbt-run-previous-command | C-x '      |
