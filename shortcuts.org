@@ -4,14 +4,16 @@
 #+LaTeX_CLASS: rcalibrionecolumn
 #+LaTeX_CLASS_OPTIONS: [english]
 * Help
-| *Action*       | *Shortcut* |
-|----------------+------------|
-| help-command   | C-h        |
-| apropos        | C-h a      |
-| describe-mode  | C-h m      |
-| info           | C-h i      |
-| google-this    | C-c / t    |
-| helm-descbinds | C-c C-h    |
+| *Action*          | *Shortcut* |
+|-------------------+------------|
+| help-command      | C-h        |
+| apropos           | C-h a      |
+| describe-mode     | C-h m      |
+| describe my major | C-h C-m    |
+| info              | C-h i      |
+| google-this       | C-c / t    |
+| helm-descbinds    | C-c C-h    |
+| dash-at-point     | C-c d      |
 * Key-Chords
 | *Action*           | *Shortcut*            |
 |--------------------+-----------------------|
@@ -19,7 +21,7 @@
 | ]                  | bn                    |
 | {                  | yx                    |
 | }                  | nm                    |
-| /                  | qw                    |
+| "/"                | qw                    |
 | \                  | ü+                    |
 | jump-char-forward  | hh                    |
 | jump-char-backward | aa                    |
@@ -42,6 +44,8 @@
 | rename-current-buffer-file                                                  | C-x w             |
 | delete-current-buffer-file                                                  | C-x C-k           |
 | In ido-find-file go to home                                                 | C-c h             |
+| Open project-explorer                                                       | C-c C-j           |
+| Open project-explorer helm                                                  | C-c j             |
 |-----------------------------------------------------------------------------+-------------------|
 | ibuffer                                                                     | C-x C-b           |
 |-----------------------------------------------------------------------------+-------------------|
@@ -119,8 +123,8 @@
 | *Action*                | *Shortcut*  |
 |-------------------------+-------------|
 | ace-jump-line-mode      | jj          |
-| ace-jump-word-mode      | hh          |
-| jump-char-forward       | kk          |
+| ace-jump-word-mode      | kk          |
+| jump-char-forward       | hh          |
 | jump-char-backward      | aa          |
 | iy-go-to-char           | öö          |
 | beginning-of-defun      | C-M-a       |
@@ -273,6 +277,7 @@
 | join-line                   | M-j, C-x a        |
 | move-line-up                | M-S-up            |
 | move-line-down              | M-S-down          |
+| new line below and indent   | M-<return>        |
 |-----------------------------+-------------------|
 | just-one-space              | zz                |
 | zap-to-char                 | üü                |
@@ -423,7 +428,7 @@
 * ESS
 | *Action*              | *Shortcut* |
 |-----------------------+------------|
-| ess-tracebug-prefix   | M-p        |
+| ess-tracebug-prefix   | M-#        |
 | ess-bp-set            | F5         |
 | ess-bp-kill           | F6         |
 | beginning of function | C-M-a      |
@@ -477,3 +482,12 @@
 |--------------------------+------------|
 | sbt-find-definitions     | M-.        |
 | sbt-run-previous-command | C-x '      |
+
+* SQL
+| *Action*                 | *Shortcut* |
+|--------------------------+------------|
+| pgsql-beginning-of-query | C-M-a      |
+| pgsql-end-of-query       | C-M-e      |
+| pgsql-mark-query         | C-M-h      |
+| pgsql-eval-query         | C-M-x      |
+
